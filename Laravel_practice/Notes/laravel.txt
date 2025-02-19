@@ -1,0 +1,21 @@
+          1-> command that we use to creat project on laravel
+("composer create-project laravel/laravel example-app")
+            2-> second comman we use to start our laravel project is 
+("php artisan serve")
+                3->ther are some name of extansions which we use in vscode
+.php intellisnse
+.php namespace resolver
+.laravel extra intelisense
+.laravel blade
+.laravel blade snipets
+.larave; goto view
+
+ 3-> if we simply write" php artisan " then it show us all commands related ti php artisan
+
+4-> if we write ("-h") after the "php artisan + folder name eg route" then 
+it will show us all commands relatesd to that folder
+->5to create model and migration
+php artisan make:model register_form -m  
+6-> to create table on batabsae
+php artisan migrate
+7-> optimize 

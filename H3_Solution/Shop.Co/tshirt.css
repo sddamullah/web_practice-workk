@@ -1,0 +1,799 @@
+.home-cont {
+  width: 85%;
+  margin: auto;
+}
+.text-sec {
+  color: gray;
+}
+.fs-md {
+  font-size: 15px;
+}
+hr {
+  color: rgba(128, 128, 128, 0.493) !important;
+}
+.paginatio .fa-angle-right {
+  margin: 0px 0.5%;
+}
+.pro-detail {
+  display: grid;
+  grid-template-columns: 1.5fr 4.5fr 6fr;
+  flex-shrink: none;
+  gap: 1%;
+}
+.pro-detail .sm-images div {
+  width: 10.5vw;
+  display: flex;
+  justify-content: center;
+  max-height: 154px;
+  margin-top: 17px !important;
+  overflow: hidden;
+  border-radius: 15px !important ;
+  background-color: rgb(240, 240, 240) !important;
+  cursor: pointer;
+}
+
+.pro-detail .sm-images div img {
+  max-width: 100%;
+  height: 180px;
+}
+.border-top {
+  border-top: 1px solid lightgray;
+}
+.paginatio {
+  margin-top: 21px;
+}
+.pro-detail .preview-img {
+  margin-top: 17px;
+  width: 31vw;
+  max-height: 497px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.pro-detail .preview-img img {
+  display: flex;
+  justify-self: center;
+  max-height: 508px;
+}
+.onelife-text {
+  padding-top: 12px;
+  padding-left: 3%;
+}
+.onelife-text .h-text {
+  font-size: 2.8vw;
+  width: max-content;
+  margin-bottom: 0px;
+}
+.onelife-text .d-flex div i {
+  font-size: 18px;
+  margin-right: 10px;
+}
+.onelife-text .d-flex div {
+  margin-top: 6px;
+}
+.onelife-text div .price,
+.onelife-text div del {
+  font-size: 32px;
+  font-weight: 600;
+  margin-right: 9px;
+}
+.onelife-text div .discount {
+  color: rgba(255, 0, 0, 0.786);
+  background-color: rgba(234, 5, 5, 0.16);
+  padding: 5px 14px 5px 14px;
+  margin-top: 20px;
+  border-radius: 100px;
+  height: 32px;
+  margin-bottom: 5px;
+  margin-top: 3px;
+}
+.onelife-text .rates {
+  display: flex;
+  align-items: center;
+  height: 60px;
+}
+.onelife-text .desc {
+  font-size: 15px;
+  margin-top: 4px;
+  margin-bottom: 13px;
+}
+.onelife-text .select {
+  margin-top: 3.2%;
+  font-size: 15px;
+}
+.colors .box1,
+.colors .box2,
+.colors .box3 {
+  padding: 1.2% 2%;
+  border-radius: 100%;
+  margin-right: 1.8%;
+  cursor: pointer;
+}
+
+.colors {
+  margin-top: 14px;
+  margin-bottom: 27px;
+}
+.colors .box1 {
+  background-color: rgb(79, 70, 49);
+}
+.colors .box2 {
+  background-color: rgb(49, 79, 74);
+}
+.colors .box3 {
+  background-color: rgb(49, 52, 79);
+}
+.onelife-text .size-btn .btn {
+  padding: 9px 21px 9px 21px;
+  border-radius: 100px;
+  margin-right: 9px;
+  margin-top: 0px;
+  font-size: 15px;
+  color: gray;
+}
+.onelife-text .choose-size {
+  margin-bottom: 10px;
+}
+.counter {
+  width: 29% !important;
+  background-color: rgb(240, 240, 240);
+  border-radius: 100px;
+  padding: 0px 4% 0px 4%;
+  height: 47px;
+}
+
+.onelife-text .counter button {
+  border: 0px;
+  font-size: 22px;
+  text-align: center;
+  width: 30%;
+  height: 100%;
+  background: transparent;
+}
+.onelife-text .counter input {
+  font-size: 18px;
+  border: 0px;
+  text-align: center;
+  width: 40%;
+  height: 100%;
+  background: transparent;
+}
+.onelife-text .size-btn input:focus,
+.onelife-text .counter input:focus {
+  outline: 0px;
+  box-shadow: none;
+}
+.onelife-text .add-cart {
+  border: 0px;
+  background-color: black;
+  color: white;
+  font-size: 15px;
+  border-radius: 100px;
+  width: 67%;
+  text-align: center;
+  height: 47px;
+}
+.View-btn {
+  padding: 1.15% 4.1% !important;
+  font-size: 15px !important;
+}
+.coments-sec {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.slider2 {
+  display: flex;
+  justify-content: space-between;
+}
+.tabs-buttons button {
+  font-size: 19px;
+  color: gray;
+  width: 33%;
+  border: 0px;
+  background: none;
+  height: 57px;
+}
+.button-focus {
+  border-bottom: 2px solid black !important;
+  color: black !important;
+  padding-top: 2px;
+}
+.tabs-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5%;
+}
+.slider-icon {
+  transform: rotate(180%) !important;
+}
+.coment-head-sec {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  height: 73px;
+}
+.coment-head-sec .coment-sec-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 24vw;
+}
+.all-reviews {
+  font-size: 22px;
+  font-weight: 700;
+  margin-top: 12px;
+}
+.coment-head-sec .coment-sec-buttons .slid {
+  background-color: rgb(240, 240, 240);
+  font-size: 2.5vmin;
+  border: none;
+  border-radius: 100px;
+  width: 13%;
+  height: 45px;
+}
+
+.coment-head-sec .coment-sec-buttons .dropdown {
+  width: 35%;
+}
+.coment-head-sec .coment-sec-buttons .lates {
+  background-color: rgb(240, 240, 240);
+  font-size: 2.3vmin;
+  border: none;
+  display: flex !important;
+  align-items: baseline;
+  padding: 0px 10%;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 100px;
+  width: 100%;
+  height: 45px;
+}
+
+.coment-head-sec .coment-sec-buttons .review {
+  background-color: rgb(240, 240, 240);
+  font-size: 2.3vmin;
+  border: none;
+  border-radius: 100px;
+  width: 48%;
+  height: 45px;
+}
+
+.comment-sec {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.comment-sec .commentss {
+  width: 49.2%;
+  border: 1px solid rgb(240, 240, 240);
+
+  margin-bottom: 2%;
+  padding: 2% 3.4% 0% 2.6%;
+  border-radius: 20px;
+}
+.comment-sec .commentss .rating {
+  display: flex;
+  justify-content: space-between;
+}
+.comment-sec .commentss .rating div .fa-star {
+  margin-bottom: 10px;
+  color: gold;
+  margin-right: 5px;
+  font-size: 16px;
+}
+.comment-sec .commentss .rating div .fa-ellipsis,
+.comment-sec .commentss .comment-user span {
+  font-size: 20px;
+  font-weight: 600;
+}
+.comment-sec .commentss .comment-user .fa-check {
+  font-size: 12px;
+  margin-bottom: 1.5% !important;
+  background-color: rgb(1, 171, 49);
+  color: white;
+  border-radius: 100%;
+  padding: 4px;
+  margin-left: 5px;
+}
+
+.comment-sec .commentss .comnet-msg {
+  font-size: 15px;
+}
+.load-more input {
+  width: 210px;
+  background: white;
+  border: 1px solid #d3d3d382;
+  height: 50px;
+  border-radius: 100px;
+  font-size: 15px;
+  box-shadow: 2px 2px 2px #d3d3d333;
+  margin-top: 2%;
+}
+.load-more {
+  text-align: center;
+}
+
+/* .card-img img {
+  height: 280px;
+
+  display: flex;
+  justify-self: center;
+}
+.card-img {
+  background-color: rgb(242, 240, 241);
+  border-radius: 20px !important;
+}
+.card {
+  width: 19.5vw;
+  border: 0px !important;
+}
+
+.card-body {
+  padding-left: 1vw !important;
+}
+.card-body .fa-star {
+  color: gold;
+  margin-right: 4px;
+  margin-top: 4px;
+  font-size: 16px;
+  margin-bottom: 14px;
+}
+.card-body div .price,
+.card-body div del {
+  font-weight: 600;
+  font-size: 24px;
+  margin-right: 8px;
+}
+.card-body div .dis-msg {
+  color: rgba(255, 0, 0, 0.786);
+  background-color: rgba(234, 5, 5, 0.16);
+  padding: 5px 10px 5px 10px;
+  border-radius: 100px;
+}
+
+.card-body p {
+  font-size: 19px !important;
+  text-wrap: nowrap;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+.card-body div span.rounded-pill {
+  color: rgba(227, 47, 47, 0.582);
+  background-color: rgba(255, 0, 0, 0.227);
+}
+.card-body div .rating {
+  font-size: 15px !important;
+  font-weight: lighter;
+}
+.cards-heading {
+  font-size: 2.8rem;
+  text-align: center;
+  margin-bottom: 45px;
+  margin-top: 54px;
+  margin-right: 9px;
+} */
+.btn-contt {
+  height: 23.1vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards-heading {
+  line-height: 11.1vw !important;
+}
+@media all and (max-width: 767px) {
+  .cards-heading {
+    font-size: 7vw !important;
+    line-height: 29vw;
+    height: 26vw;
+  }
+  .colors .box1,
+  .colors .box2,
+  .colors .box3 {
+    padding: 1.2% 2%;
+  }
+  .btn-contt {
+    height: 23.1vw;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+  }
+  .View-btn {
+    padding: 1.15% 9.1% !important;
+    font-size: 15px !important;
+    width: auto !important;
+  }
+  .cards-heading {
+    font-size: 7vw !important;
+    font-size: 2.8rem;
+    text-align: center;
+    line-height: 25vw;
+    height: 26vw;
+  }
+  .car-div {
+    justify-content: space-between;
+  }
+  .card-img img {
+    height: 175px !important;
+  }
+  .card-img {
+    border-radius: 10px !important;
+  }
+  .card {
+    width: 48% !important;
+    margin: 0px;
+    margin-bottom: 30px;
+  }
+  .card-body p {
+    font-size: 3.5vmin !important;
+  }
+
+  .card-body .fa-star {
+    font-size: 3vmin;
+    margin-bottom: 4px;
+  }
+  .card-body div .dis-msg {
+    padding: 3px 6px 3px 6px;
+    border-radius: 100px;
+    font-size: 3vmin;
+  }
+  .card-body div .price,
+  .card-body div del {
+    font-weight: 600;
+    font-size: 3vmax;
+    margin-right: 3px;
+  }
+  .card-body div .rating {
+    font-size: 13px !important;
+    margin-top: 1%;
+  }
+  .home-cont {
+    width: 95%;
+    margin: auto;
+  }
+  .paginatio .fa-angle-right {
+    margin: 0px 1%;
+  }
+  .paginatio {
+    font-size: 13px;
+  }
+  .onelife-text div .price,
+  .onelife-text div del {
+    font-weight: 600;
+    font-size: 24px;
+  }
+  .pro-detail {
+    display: flex;
+    /* width: fit-content; */
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .pro-detail .sm-images div {
+    width: 28vw;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 15px !important;
+    background-color: rgb(240, 240, 240) !important;
+  }
+
+  .pro-detail .sm-images {
+    display: flex;
+    justify-content: space-around;
+    order: 2;
+    width: 100%;
+  }
+  .pro-detail .sm-images div img {
+    height: auto;
+  }
+  .star-num {
+    font-size: 14px;
+    margin-top: 11px;
+    font-weight: lighter;
+  }
+  .pro-detail .preview-img img {
+    width: 290px;
+    max-height: 350px;
+    border-radius: 20px;
+  }
+  .pro-detail .preview-img {
+    padding: auto !important;
+    order: 1;
+    width: 100vw;
+  }
+
+  .onelife-text {
+    padding-top: 12px;
+    padding-left: 5px;
+    overflow: hidden;
+    order: 3;
+    width: 100%;
+  }
+  .onelife-text .desc {
+    font-size: 13px;
+  }
+  .onelife-text .h-text {
+    margin-top: 1rem;
+    font-size: 7vw;
+    line-height: normal;
+    width: auto;
+  }
+  .onelife-text .rates {
+    height: 42px;
+  }
+  .onelife-text div .discount {
+    margin-top: 3px;
+    font-size: 13px;
+    height: 24px;
+    width: 47px;
+    padding: 2px 9px 3px 9px;
+  }
+  /* .colors {
+    margin-top: 3%;
+    margin-bottom: 6%;
+  } */
+
+  /* .onelife-text .select {
+    margin-top: 12px;
+  } */
+  /* .colors .box1,
+  .colors .box2,
+  .colors .box3 {
+    padding: 3px 13px;
+  } */
+
+  .onelife-text .d-flex div i {
+    font-size: 16px;
+  }
+  .counter {
+    /* width: 93px !important; */
+    background-color: rgb(240, 240, 240);
+    border-radius: 100px;
+    padding: 0px 4% 0px 4%;
+    /* padding: 6px 2px 6px 2px; */
+    /* line-height: 74px; */
+    /* margin-top: 9px; */
+    width: 28% !important;
+    height: 35px;
+  }
+  .onelife-text .counter input {
+    font-size: 16px !;
+    border: 0px;
+    text-align: center;
+    /* width: 35px; */
+    background: transparent;
+    height: 25px;
+  }
+  .onelife-text .size-btn {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .onelife-text .size-btn .btn {
+    padding: 2% 4%;
+    border-radius: 100px;
+    margin: auto !important;
+    font-size: 14px;
+    color: gray;
+  }
+  .onelife-text .counter button {
+    border: 0px;
+    font-size: 16px;
+    text-align: center;
+    /* width: 28px; */
+    /* background: transparent; */
+  }
+  .onelife-text .add-cart {
+    /* width: 190px !important; */
+
+    font-size: 14px;
+    height: 40px;
+    width: 68%;
+  }
+  .tabs-buttons button {
+    font-size: 13px;
+    width: fit-content;
+  }
+  .coment-head-sec {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px !important;
+    margin-top: 5% !important;
+    align-items: baseline;
+  }
+  .tabs-buttons {
+    margin-top: 30px;
+  }
+  .coment-head-sec .coment-sec-buttons {
+    width: 48%;
+  }
+  .coment-head-sec .coment-sec-buttons .review {
+    font-size: 3.5vmin;
+    border: none;
+    border-radius: 100px;
+    width: fit-content;
+    height: 40px;
+    padding: 0% 10%;
+  }
+  .coment-head-sec .coment-sec-buttons .slid {
+    background-color: rgb(240, 240, 240);
+    font-size: 3.5vmin;
+    border: none;
+    border-radius: 100px;
+    padding: 1% 2%;
+    width: fit-content;
+    height: 40px;
+  }
+
+  .all-reviews {
+    font-size: 17px;
+    margin: 0px;
+  }
+  .all-reviews span {
+    font-size: 10px !important;
+  }
+  /* .comment-sec {
+    padding: 0px 15px 0px 15px;
+  } */
+  .comment-sec .commentss {
+    padding: 10px 15px 0px 16px;
+    width: 100vw !important ;
+  }
+  .comment-sec .commentss .comnet-msg {
+    font-size: 13px;
+  }
+
+  .dropdown .btn {
+    padding: 0px 0px 0px 0px !important;
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 1200px) {
+  .coment-head-sec .coment-sec-buttons .lates {
+    justify-content: center;
+    gap: 1vw;
+    height: 40px;
+  }
+  .paginatio {
+    margin: 2% 0%;
+    font-size: 12px;
+  }
+  .pro-detail {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0px;
+  }
+  .coment-head-sec .coment-sec-buttons .review {
+    height: 40px;
+  }
+  .coment-head-sec .coment-sec-buttons .slid {
+    height: 40px;
+  }
+  .onelife-text .counter button {
+    font-size: 2.2vw;
+  }
+  .onelife-text .counter input {
+    font-size: 2.2vw;
+  }
+  .pro-detail .sm-images div {
+    width: 26vw;
+    height: 130px;
+  }
+  .counter {
+    height: 40px;
+  }
+  .onelife-text .add-cart {
+    height: 40px;
+  }
+  .sm-images {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    order: 3;
+    width: 100%;
+  }
+  .pro-detail .preview-img img {
+    max-height: 450px;
+    border-radius: 20px;
+  }
+  .pro-detail .preview-img {
+    margin: 0px;
+    width: 46%;
+  }
+  .pro-detail .sm-images div img {
+    height: 140px;
+  }
+
+  .comment-sec .commentss {
+    padding-left: 2%;
+  }
+  .onelife-text {
+    width: 53%;
+    padding-left: 10px;
+    padding-top: 0px;
+  }
+  .onelife-text .h-text {
+    font-size: 3vw;
+  }
+  .onelife-text div .price,
+  .onelife-text div del {
+    font-size: 26px;
+  }
+  .onelife-text .desc {
+    font-size: 13px;
+    margin-top: 1px;
+    margin-bottom: 10px;
+  }
+
+  .onelife-text .size-btn .btn {
+    padding: 7px 15px 7px 15px !important;
+    margin-right: 1%;
+    margin: 0px;
+  }
+  .coment-head-sec .coment-sec-buttons {
+    width: 33%;
+  }
+  .comment-sec {
+    padding: 0px;
+  }
+  .card {
+    width: 31% !important;
+  }
+
+  .card-body div .price,
+  .card-body div del {
+    font-weight: 600;
+    font-size: 2vw;
+    margin-right: 8px;
+  }
+  .card-body p {
+    font-size: 2vw !important;
+    margin-bottom: 3px;
+  }
+
+  .card-img img {
+    height: 230px !important;
+  }
+  .card-body .fa-star {
+    font-size: 1.5vw;
+    margin-bottom: 0px;
+  }
+  .card-body div .dis-msg {
+    font-size: 1.3vw !important;
+  }
+}
+/* @media all and (max-width: 767px) {
+  .cards-heading {
+    width: 60vw;
+    margin-top: 13% !important;
+    line-height: normal !important;
+  }
+} */
+
+/* @media screen and (min-width: 751px) and (max-width: 1220px) {
+  .card {
+    width: 31% !important;
+  }
+
+  .card-body div .price,
+  .card-body div del {
+    font-weight: 600;
+    font-size: 2vw;
+    margin-right: 8px;
+  }
+  .card-body p {
+    font-size: 2vw !important;
+    margin-bottom: 3px;
+
+
+  }
+
+  .card-img img {
+    height: 230px !important;
+  }
+  .card-body .fa-star {
+    font-size: 1.5vw;
+    margin-bottom: 0px;
+  }
+  .card-body div .dis-msg {
+    font-size: 1.3vw !important;
+  }
+} */

@@ -1,0 +1,15 @@
+hr {
+  margin: 0px;
+}
+
+#tab-row td {
+  border: 1px solid rgba(128, 128, 128, 0.582);
+  font-size: 16px;
+  padding: 4px;
+  text-align: center;
+  border-collapse: collapse;
+}
+#tab-row th {
+  border: 1px solid rgba(128, 128, 128, 0.582);
+  text-align: center;
+}

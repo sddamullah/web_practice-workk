@@ -1,0 +1,1418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- fontawsome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <style>
+        .varity-dropdown .bropdownbtn {
+            cursor: pointer;
+            width: 100%;
+            color: gray;
+            margin-bottom: 10px;
+            background-color: transparent;
+            border: 0px;
+        }
+
+        .varity-dropdown {
+            border: 0px;
+            width: 100%;
+        }
+
+
+        .varity-dropdown .dropdown-contentt {
+            max-height: 0px;
+            overflow: hidden;
+            transition-property: max-height;
+            transition-duration: 1.5s;
+        }
+
+        /* .varity-nested-d:hover .nested-d-content,
+.varity-dropdown:hover .dropdown-contentt {
+  
+  max-height: 500px;
+
+
+} */
+        .dropclass {
+            max-height: 500px !important;
+        }
+
+
+        .bropdownbtn .fa-angle-right {
+            transition-property: transform;
+            transition-duration: 0.5s;
+        }
+
+        .varity-dropdown:hover .bropdownbtn .fa-angle-right {
+            transform: rotate(90deg);
+            font-size: 18px !important;
+        }
+
+
+        .varity-dropdown .dropdown-contentt ul {
+            margin: 0px;
+            padding: 0px;
+        }
+
+
+        .varity-dropdown .dropdown-contentt ul li:hover {
+            background-color: rgb(240, 240, 240);
+
+            color: black;
+        }
+
+
+        .varity-dropdown .dropdown-contentt ul li {
+            list-style: none;
+            cursor: pointer;
+            padding: 10px;
+        }
+
+
+        .varity-dropdown .dropdown-contentt ul li a {
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+        }
+    </style> -->
+    <style>
+        /* General Styles */
+        .varity-dropdown {
+            border: 0px;
+            width: 100%;
+        }
+
+        .varity-dropdown .bropdownbtn {
+            cursor: pointer;
+            width: 100%;
+            color: gray;
+            margin-bottom: 10px;
+            background-color: transparent;
+            border: 0px;
+        }
+
+        .varity-dropdown .dropdown-contentt {
+            max-height: 0px;
+            /* Initially hidden */
+            overflow: hidden;
+            /* Prevent content from spilling out */
+            transition: max-height 0.5s ease-out;
+            /* Smooth transition for max-height */
+            background-color: white;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            padding: 0;
+        }
+
+        .varity-dropdown.open .dropdown-contentt {
+            max-height: 1000px;
+            /* Set to a sufficiently large max-height, enough to hold all content */
+        }
+
+        .bropdownbtn .fa-angle-right {
+            transition: transform 0.5s ease-out;
+            /* Icon rotation should also have 0.5s transition */
+        }
+
+        .rotate {
+            transform: rotate(90deg);
+            /* Rotate icon when dropdown is opened */
+        }
+
+        .varity-dropdown .dropdown-contentt ul {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .varity-dropdown .dropdown-contentt ul li {
+            list-style: none;
+            cursor: pointer;
+            padding: 10px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .varity-dropdown .dropdown-contentt ul li:hover {
+            background-color: rgb(240, 240, 240);
+            color: black;
+        }
+
+        .varity-dropdown .dropdown-contentt ul li a {
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+        }
+
+        .container .col-md-4 {
+            height: 200px;
+            padding: 20px !important;
+        }
+    </style>
+</head>
+<!-- <style>
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .col-1 {
+        width: 8.33%;
+    }
+
+    .col-2 {
+        width: 16.66%;
+    }
+
+    .col-3 {
+        width: 25%;
+    }
+
+    .col-4 {
+        width: 33.333%;
+    }
+
+    .col-5 {
+        width: 41.66%;
+    }
+
+    .col-6 {
+        width: 50%;
+    }
+
+    .col-7 {
+        width: 58.33%;
+    }
+
+    .col-8 {
+        width: 66.66%;
+    }
+
+    .col-9 {
+        width: 75%;
+    }
+
+    .col-10 {
+        width: 83.33%;
+    }
+
+    .col-11 {
+        width: 91.66%;
+    }
+
+    .col-12 {
+        width: 100%;
+    }
+
+    .m1-top {
+        margin-top: 10px;
+    }
+
+    .m2-top {
+        margin-top: 15px;
+    }
+
+    .m3-top {
+        margin-top: 20px;
+    }
+
+    .m4-top {
+        margin-top: 30px;
+    }
+
+    .m5-top {
+        margin-top: 40px;
+    }
+
+
+    .m1-left {
+        margin-left: 10px;
+    }
+
+    .m2-left {
+        margin-left: 15px;
+    }
+
+    .m3-left {
+        margin-left: 20px;
+    }
+
+    .m4-left {
+        margin-left: 30px;
+    }
+
+    .m5-left {
+        margin-left: 40px;
+    }
+
+
+    .m1-right {
+        margin-right: 10px;
+    }
+
+    .m2-right {
+        margin-right: 15px;
+    }
+
+    .m3-right {
+        margin-right: 20px;
+    }
+
+    .m4-right {
+        margin-right: 30px;
+    }
+
+    .m5-right {
+        margin-right: 40px;
+    }
+
+    .m1-bottom {
+        margin-bottom: 10px;
+    }
+
+    .m2-bottom {
+        margin-bottom: 15px;
+    }
+
+    .m3-bottom {
+        margin-bottom: 20px;
+    }
+
+    .m4-bottom {
+        margin-bottom: 30px;
+    }
+
+    .m5-bottom {
+        margin-bottom: 40px;
+    }
+
+
+    /* padding  */
+    .p1-top {
+        padding-top: 10px;
+    }
+
+    .p2-top {
+        padding-top: 15px;
+    }
+
+    .m3-top {
+        padding-top: 20px;
+    }
+
+    .p4-top {
+        padding-top: 30px;
+    }
+
+    .p5-top {
+        padding-top: 40px;
+    }
+
+    .p1-left {
+        padding-left: 10px;
+    }
+
+    .p2-left {
+        padding-left: 15px;
+    }
+
+    .p3-left {
+        padding-left: 20px;
+    }
+
+    .p4-left {
+        padding-left: 30px;
+    }
+
+    .p5-left {
+        padding-left: 40px;
+    }
+
+    .p1-right {
+        padding-right: 10px;
+    }
+
+    .p2-right {
+        padding-right: 15px;
+    }
+
+    .p3-right {
+        padding-right: 20px;
+    }
+
+    .p4-right {
+        padding-right: 30px;
+    }
+
+    .p5-right {
+        padding-right: 40px;
+    }
+
+    .p1-bottom {
+        padding-bottom: 10px;
+    }
+
+    .p2-bottom {
+        padding-bottom: 15px;
+    }
+
+    .p3-bottom {
+        padding-bottom: 20px;
+    }
+
+    .p4-bottom {
+        padding-bottom: 30px;
+    }
+
+    .p5-bottom {
+        padding-bottom: 40px;
+    }
+
+    @media screen and (min-width: 320px) {
+        .col-1mall {
+            width: 25%;
+        }
+
+        .col-2-xsmall {
+            width: 50%;
+        }
+
+        .col-3-xsmall {
+            width: 70%;
+        }
+
+        .col-4-xsmall {
+            width: 100%;
+        }
+
+        .m1-top-sm {
+            margin-top: 10px;
+        }
+
+        .m2-top-sm {
+            margin-top: 15px;
+        }
+
+        .m3-top-sm {
+            margin-top: 20px;
+        }
+
+        .m4-top-sm {
+            margin-top: 30px;
+        }
+
+        .m5-top-sm {
+            margin-top: 40px;
+        }
+
+
+        .m1-left-sm {
+            margin-left: 10px;
+        }
+
+        .m2-left-sm {
+            margin-left: 15px;
+        }
+
+        .m3-left-sm {
+            margin-left: 20px;
+        }
+
+        .m4-left-sm {
+            margin-left: 30px;
+        }
+
+        .m5-left-sm {
+            margin-left: 40px;
+        }
+
+
+        .m1-right-sm {
+            margin-right: 10px;
+        }
+
+        .m2-right-sm {
+            margin-right: 15px;
+        }
+
+        .m3-right-sm {
+            margin-right: 20px;
+        }
+
+        .m4-right-sm {
+            margin-right: 30px;
+        }
+
+        .m5-right-sm {
+            margin-right: 40px;
+        }
+
+        .m1-bottom-sm {
+            margin-bottom: 10px;
+        }
+
+        .m2-bottom-sm {
+            margin-bottom: 15px;
+        }
+
+        .m3-bottom-sm {
+            margin-bottom: 20px;
+        }
+
+        .m4-bottom-sm {
+            margin-bottom: 30px;
+        }
+
+        .m5-bottom-sm {
+            margin-bottom: 40px;
+        }
+
+
+        /* padding  */
+        .p1-top-sm {
+            padding-top: 10px;
+        }
+
+        .p2-top-sm {
+            padding-top: 15px;
+        }
+
+        .m3-top-sm {
+            padding-top: 20px;
+        }
+
+        .p4-top-sm {
+            padding-top: 30px;
+        }
+
+        .p5-top-sm {
+            padding-top: 40px;
+        }
+
+        .p1-left-sm {
+            padding-left: 10px;
+        }
+
+        .p2-left-sm {
+            padding-left: 15px;
+        }
+
+        .p3-left-sm {
+            padding-left: 20px;
+        }
+
+        .p4-left-sm {
+            padding-left: 30px;
+        }
+
+        .p5-left-sm {
+            padding-left: 40px;
+        }
+
+        .p1-right-sm {
+            padding-right: 10px;
+        }
+
+        .p2-right-sm {
+            padding-right: 15px;
+        }
+
+        .p3-right-sm {
+            padding-right: 20px;
+        }
+
+        .p4-right-sm {
+            padding-right: 30px;
+        }
+
+        .p5-right-sm {
+            padding-right: 40px;
+        }
+
+        .p1-bottom-sm {
+            padding-bottom: 10px;
+        }
+
+        .p2-bottom-sm {
+            padding-bottom: 15px;
+        }
+
+        .p3-bottom-sm {
+            padding-bottom: 20px;
+        }
+
+        .p4-bottom-sm {
+            padding-bottom: 30px;
+        }
+
+        .p5-bottom-sm {
+            padding-bottom: 40px;
+        }
+
+
+    }
+
+    @media screen and (min-width: 425px) and (max-width: 768px) {
+        .col-1-small {
+            width: 50%;
+        }
+
+        .col-2-small {
+            width: 100%;
+        }
+
+
+
+
+
+
+        /* paddin */
+
+    }
+
+    @media all and (min-width:320px) {
+        .header-container {
+            width: 100%;
+            background-color: red;
+        }
+    }
+
+    @media all and (min-width:570px) {
+        .header-container {
+            width: 540px;
+            margin: auto;
+            background-color: black;
+        }
+
+    }
+
+    @media all and (min-width:768px) {
+        .header-container {
+            width: 730px;
+            margin: auto;
+            background-color: green;
+        }
+
+        .m1-top-md {
+            margin-top: 10px;
+        }
+
+        .m2-top-md {
+            margin-top: 15px;
+        }
+
+        .m3-top-md {
+            margin-top: 20px;
+        }
+
+        .m4-top-md {
+            margin-top: 30px;
+        }
+
+        .m5-top-md {
+            margin-top: 40px;
+        }
+
+
+        .m1-left-md {
+            margin-left: 10px;
+        }
+
+        .m2-left-md {
+            margin-left: 15px;
+        }
+
+        .m3-left-md {
+            margin-left: 20px;
+        }
+
+        .m4-left-md {
+            margin-left: 30px;
+        }
+
+        .m5-left-md {
+            margin-left: 40px;
+        }
+
+
+        .m1-right-md {
+            margin-right: 10px;
+        }
+
+        .m2-right-md {
+            margin-right: 15px;
+        }
+
+        .m3-right-md {
+            margin-right: 20px;
+        }
+
+        .m4-right-md {
+            margin-right: 30px;
+        }
+
+        .m5-right-md {
+            margin-right: 40px;
+        }
+
+        .m1-bottom-md {
+            margin-bottom: 10px;
+        }
+
+        .m2-bottom-md {
+            margin-bottom: 15px;
+        }
+
+        .m3-bottom-md {
+            margin-bottom: 20px;
+        }
+
+        .m4-bottom-md {
+            margin-bottom: 30px;
+        }
+
+        .m5-bottom-md {
+            margin-bottom: 40px;
+        }
+
+
+        /* padding  */
+        .p1-top-md {
+            padding-top: 10px;
+        }
+
+        .p2-top-md {
+            padding-top: 15px;
+        }
+
+        .m3-top-md {
+            padding-top: 20px;
+        }
+
+        .p4-top-md {
+            padding-top: 30px;
+        }
+
+        .p5-top-md {
+            padding-top: 40px;
+        }
+
+        .p1-left-md {
+            padding-left: 10px;
+        }
+
+        .p2-left-md {
+            padding-left: 15px;
+        }
+
+        .p3-left-md {
+            padding-left: 20px;
+        }
+
+        .p4-left-md {
+            padding-left: 30px;
+        }
+
+        .p5-left-md {
+            padding-left: 40px;
+        }
+
+        .p1-right-md {
+            padding-right: 10px;
+        }
+
+        .p2-right-md {
+            padding-right: 15px;
+        }
+
+        .p3-right-md {
+            padding-right: 20px;
+        }
+
+        .p4-right-md {
+            padding-right: 30px;
+        }
+
+        .p5-right-md {
+            padding-right: 40px;
+        }
+
+        .p1-bottom-md {
+            padding-bottom: 10px;
+        }
+
+        .p2-bottom-md {
+            padding-bottom: 15px;
+        }
+
+        .p3-bottom-md {
+            padding-bottom: 20px;
+        }
+
+        .p4-bottom-md {
+            padding-bottom: 30px;
+        }
+
+        .p5-bottom-md {
+            padding-bottom: 40px;
+        }
+    }
+
+    @media all and (min-width:920px) {
+        .header-container {
+            width: 900px;
+            margin: auto;
+            background-color: pink;
+        }
+    }
+
+    @media all and (min-width:1200px) {
+        .header-container {
+            min-width: 1180px;
+            margin: auto;
+
+            background-color: gold;
+
+        }
+
+    }
+
+    @media all and (min-width:1400px) {
+        .m1-top-lg {
+            margin-top: 10px;
+        }
+
+        .m2-top-lg {
+            margin-top: 15px;
+        }
+
+        .m3-top-lg {
+            margin-top: 20px;
+        }
+
+        .m4-top-lg {
+            margin-top: 30px;
+        }
+
+        .m5-top-lg {
+            margin-top: 40px;
+        }
+
+
+        .m1-left-lg {
+            margin-left: 10px;
+        }
+
+        .m2-left-lg {
+            margin-left: 15px;
+        }
+
+        .m3-left-lg {
+            margin-left: 20px;
+        }
+
+        .m4-left-lg {
+            margin-left: 30px;
+        }
+
+        .m5-left-lg {
+            margin-left: 40px;
+        }
+
+
+        .m1-right-lg {
+            margin-right: 10px;
+        }
+
+        .m2-right-lg {
+            margin-right: 15px;
+        }
+
+        .m3-right-lg {
+            margin-right: 20px;
+        }
+
+        .m4-right-lg {
+            margin-right: 30px;
+        }
+
+        .m5-right-lg {
+            margin-right: 40px;
+        }
+
+        .m1-bottom-lg {
+            margin-bottom: 10px;
+        }
+
+        .m2-bottom-lg {
+            margin-bottom: 15px;
+        }
+
+        .m3-bottom-lg {
+            margin-bottom: 20px;
+        }
+
+        .m4-bottom-lg {
+            margin-bottom: 30px;
+        }
+
+        .m5-bottom-lg {
+            margin-bottom: 40px;
+        }
+
+
+        /* padding  */
+        .p1-top-lg {
+            padding-top: 10px;
+        }
+
+        .p2-top-lg {
+            padding-top: 15px;
+        }
+
+        .m3-top-lg {
+            padding-top: 20px;
+        }
+
+        .p4-top-lg {
+            padding-top: 30px;
+        }
+
+        .p5-top-lg {
+            padding-top: 40px;
+        }
+
+        .p1-left-lg {
+            padding-left: 10px;
+        }
+
+        .p2-left-lg {
+            padding-left: 15px;
+        }
+
+        .p3-left-lg {
+            padding-left: 20px;
+        }
+
+        .p4-left-lg {
+            padding-left: 30px;
+        }
+
+        .p5-left-lg {
+            padding-left: 40px;
+        }
+
+        .p1-right-lg {
+            padding-right: 10px;
+        }
+
+        .p2-right-lg {
+            padding-right: 15px;
+        }
+
+        .p3-right-lg {
+            padding-right: 20px;
+        }
+
+        .p4-right-lg {
+            padding-right: 30px;
+        }
+
+        .p5-right-lg {
+            padding-right: 40px;
+        }
+
+        .p1-bottom-lg {
+            padding-bottom: 10px;
+        }
+
+        .p2-bottom-lg {
+            padding-bottom: 15px;
+        }
+
+        .p3-bottom-lg {
+            padding-bottom: 20px;
+        }
+
+        .p4-bottom-lg {
+            padding-bottom: 30px;
+        }
+
+        .p5-bottom-lg {
+            padding-bottom: 40px;
+        }
+
+    }
+</style> -->
+
+<!-- <body>
+    <div style="display: flex; justify-content: space-between;">
+        <button id="btn-first" onclick="tab('first')">First</button>
+        <button id="btn-second" onclick="tab('second')">Second</button>
+        <button id="btn-third" onclick="tab('third')">Third</button>
+    </div>
+
+    <div id="first" class="header-container one" style="height: 600px; background-color: red;">
+
+    </div>
+    <div id="second" class="header-container two" style="height: 600px; background-color: green; display: none;">
+
+    </div>
+    <div id="third" class="header-container three" style="height: 600px; background-color: black; display: none;">
+
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2 bg-primary col-xs-2 col-sm-2">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem molestiae tenetur consequuntur
+                pariatur
+                optio? Alias, nam! Distinctio consectetur illo veritatis aliquam ipsa odio dicta velit architecto
+                laborum fugit
+                ducimus quis assumenda voluptatem corporis voluptas quo quasi voluptatibus rem, dolores veniam magnam
+                nostrum
+                optio laboriosam eos. Ullam, odio numquam excepturi, expedita, ducimus magnam explicabo quae sint
+                repellendus
+                porro beatae perferendis in sunt adipisci quam reprehenderit itaque. Inventore, nam est vel modi totam,
+                consequuntur neque amet sapiente quasi, labore molestias repellat! Neque cupiditate pariatur illo sed
+                aspernatur. Facilis impedit vitae dicta illum asperiores! Quasi, rem! Natus aliquam aut, alias similique
+                nostrum
+                exercitationem.
+            </div>
+            <div class="col-md-4 bg-success col-xs-2 col-sm-2">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem molestiae tenetur consequuntur
+                pariatur
+                optio? Alias, nam! Distinctio consectetur illo veritatis aliquam ipsa odio dicta velit architecto
+                laborum fugit
+                ducimus quis assumenda voluptatem corporis voluptas quo quasi voluptatibus rem, dolores veniam magnam
+                nostrum
+                optio laboriosam eos. Ullam, odio numquam excepturi, expedita, ducimus magnam explicabo quae sint
+                repellendus
+                porro beatae perferendis in sunt adipisci quam reprehenderit itaque. Inventore, nam est vel modi totam,
+                consequuntur neque amet sapiente quasi, labore molestias repellat! Neque cupiditate pariatur illo sed
+                aspernatur. Facilis impedit vitae dicta illum asperiores! Quasi, rem! Natus aliquam aut, alias similique
+                nostrum
+                exercitationem.
+            </div>
+            <div class="col-md-6 bg-danger">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem molestiae tenetur consequuntur
+                pariatur
+                optio? Alias, nam! Distinctio consectetur illo veritatis aliquam ipsa odio dicta velit architecto
+                laborum fugit
+                ducimus quis assumenda voluptatem corporis voluptas quo quasi voluptatibus rem, dolores veniam magnam
+                nostrum
+                optio laboriosam eos. Ullam, odio numquam excepturi, expedita, ducimus magnam explicabo quae sint
+                repellendus
+                porro beatae perferendis in sunt adipisci quam reprehenderit itaque. Inventore, nam est vel modi totam,
+                consequuntur neque amet sapiente quasi, labore molestias repellat! Neque cupiditate pariatur illo sed
+                aspernatur. Facilis impedit vitae dicta illum asperiores! Quasi, rem! Natus aliquam aut, alias similique
+                nostrum
+                exercitationem.
+            </div>
+            <div class="col-md-8 bg-warning">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem molestiae tenetur consequuntur
+                pariatur
+                optio? Alias, nam! Distinctio consectetur illo veritatis aliquam ipsa odio dicta velit architecto
+                laborum fugit
+                ducimus quis assumenda voluptatem corporis voluptas quo quasi voluptatibus rem, dolores veniam magnam
+                nostrum
+                optio laboriosam eos. Ullam, odio numquam excepturi, expedita, ducimus magnam explicabo quae sint
+                repellendus
+                porro beatae perferendis in sunt adipisci quam reprehenderit itaque. Inventore, nam est vel modi totam,
+                consequuntur neque amet sapiente quasi, labore molestias repellat! Neque cupiditate pariatur illo sed
+                aspernatur. Facilis impedit vitae dicta illum asperiores! Quasi, rem! Natus aliquam aut, alias similique
+                nostrum
+                exercitationem.
+            </div>
+            <div class="col-md-12 bg-black text-white">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem molestiae tenetur consequuntur
+                pariatur
+                optio? Alias, nam! Distinctio consectetur illo veritatis aliquam ipsa odio dicta velit architecto
+                laborum fugit
+                ducimus quis assumenda voluptatem corporis voluptas quo quasi voluptatibus rem, dolores veniam magnam
+                nostrum
+                optio laboriosam eos. Ullam, odio numquam excepturi, expedita, ducimus magnam explicabo quae sint
+                repellendus
+                porro beatae perferendis in sunt adipisci quam reprehenderit itaque. Inventore, nam est vel modi totam,
+                consequuntur neque amet sapiente quasi, labore molestias repellat! Neque cupiditate pariatur illo sed
+                aspernatur. Facilis impedit vitae dicta illum asperiores! Quasi, rem! Natus aliquam aut, alias similique
+                nostrum
+                exercitationem.
+            </div>
+        </div>
+    </div>
+
+    <!-- <script>
+     
+        let first = document.getElementById('first');
+        let second = document.getElementById('second');
+        let third = document.getElementById('third');
+        function tab(id) {
+         
+            first.style.display = "none";
+            second.style.display = "none";
+            third.style.display = "none";
+            if (id === "first") {
+                first.style.display = "block";
+                document.getElementById('btn-first')
+            } else if (id === "second") {
+                second.style.display = "block";
+            } else if (id === "third") {
+                third.style.display = "block";
+            }
+        }
+
+     
+    </script> -->
+
+
+<!-- </body> -->
+
+
+
+
+<!-- <body>
+    <div class="varity-dropdown  ">
+        <button class="bropdownbtn d-flex justify-content-between  font3 " onclick="showdropdown()"
+            style="align-items: center; font-weight: 700; color:rgb(33, 37, 41); font-size: 20px; margin-top: 19px;">
+            Dress Style <i class="fa-solid fa-angle-right fs-6"></i>
+        </button>
+        <div class="dropdown-contentt " id="dropdown-contentt">
+
+            <ul>
+                <li>
+                    link
+                </li>
+                <li>
+                    <div class="varity-nested-d">
+                        <p class="nested-dbtn d-flex justify-content-between " style="align-items: center;">
+                            Formal <i class="fa-solid fa-angle-right"></i>
+                        </p>
+                        <div class="nested-d-content">
+                            <ul>
+                                <li>
+                                    <a href="#">Link</a>
+                                </li>
+                                <li>
+                                    <a href="#">Link</a>
+                                </li>
+                                <li>
+                                    <a href="#">Link</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </li>
+                <li>
+                    link
+                </li>
+                <li>
+                    link
+                </li>
+
+            </ul>
+
+
+
+
+        </div>
+
+    </div>
+
+    <script>
+        function showdropdown() {
+            let canva = document.getElementById('dropdown-contentt');
+            // Use toggle to switch the class on and off
+            canva.classList.toggle("dropclass");
+        }    </script>
+</body> -->
+<!-- 
+<body>
+
+
+    <div class="counter">
+        <h3>Counter: <span class="count">0</span></h3>
+        <button class="increment">Increment</button>
+        <button class="decrement">Decrement</button>
+    </div>
+
+    <div class="counter">
+        <h3>Counter: <span class="count">0</span></h3>
+        <button class="increment">Increment</button>
+        <button class="decrement">Decrement</button>
+    </div>
+
+    <div class="counter">
+        <h3>Counter: <span class="count">0</span></h3>
+        <button class="increment">Increment</button>
+        <button class="decrement">Decrement</button>
+    </div>
+
+    <script src="script.js"></script>
+
+    <script>
+        // Get all increment and decrement buttons
+        const incrementButtons = document.querySelectorAll('.increment');
+        const decrementButtons = document.querySelectorAll('.decrement');
+
+        // Add event listeners to each button
+        incrementButtons.forEach(button => {
+            button.addEventListener('click', function () {
+                const counter = this.closest('.counter').querySelector('.count');
+                counter.textContent = parseInt(counter.textContent) + 1;
+            });
+        });
+
+        decrementButtons.forEach(button => {
+            button.addEventListener('click', function () {
+                const counter = this.closest('.counter').querySelector('.count');
+                let currentCount = parseInt(counter.textContent);
+
+                // Ensure count does not go below 0
+                if (currentCount > 0) {
+                    counter.textContent = currentCount - 1;
+                }
+            });
+        });
+
+    </script>
+
+</body> -->
+
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-2 col-2 bg-danger">
+
+            </div>
+            <div class="col-md-4 col-sm-2 col-2 bg-success">
+
+            </div>
+            <div class="col-md-4 col-sm-2 col-2 bg-primary">
+
+            </div>
+        </div>
+    </div>
+    <div class="varity-dropdown">
+        <p class="bropdownbtn d-flex justify-content-between" style="align-items: center;">
+            T-shirts <i class="fa-solid fa-angle-right"></i>
+        </p>
+        <div class="dropdown-contentt">
+            <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <script>
+        document.querySelectorAll('.varity-dropdown .bropdownbtn').forEach(button => {
+            button.addEventListener('click', () => {
+                const dropdown = button.nextElementSibling;  // The dropdown content
+                const icon = button.querySelector('.fa-solid');  // The icon to rotate
+
+                // If the dropdown is not open (initial state or closed)
+                if (!dropdown.classList.contains('open')) {
+                    // Open the dropdown by dynamically setting max-height
+                    dropdown.style.maxHeight = dropdown.scrollHeight + "px"; // Use scrollHeight to set correct max-height
+                    dropdown.classList.add('open'); // Add 'open' class to trigger transition
+
+                    // Rotate the icon after the dropdown starts opening (ensure sync)
+                    setTimeout(() => {
+                        icon.classList.add('rotate'); // Rotate icon after dropdown starts opening
+                    }, 100); // Slight delay to match dropdown opening
+
+                } else {
+                    // Close the dropdown by setting max-height to 0
+                    dropdown.style.maxHeight = 0; // Set max-height back to 0px
+                    setTimeout(() => {
+                        icon.classList.remove('rotate'); // Rotate the icon back after dropdown starts closing
+                    }, 200); // Slight delay to match dropdown closing
+
+                    dropdown.classList.remove('open'); // Remove the 'open' class to collapse the dropdown
+                }
+            });
+        });
+
+
+
+    </script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    /* Basic styles for the page */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        overflow-x: hidden;
+        /* Prevent horizontal overflow */
+    }
+
+    .content {
+        text-align: center;
+        padding: 50px;
+    }
+
+    h1 {
+        margin-bottom: 20px;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    /* Off-Canvas Menu styles */
+    .off-canvas {
+        position: fixed;
+        bottom: -100%;
+        /* Initially hidden off the bottom */
+        left: 0;
+        width: 60vh;
+        right: 0;
+        background-color: #333;
+        color: white;
+        padding: 20px;
+        height: 100vh;
+        /* Take full height of the viewport */
+        transition: bottom 0.3s ease-in-out;
+        /* Smooth transition */
+        z-index: 1000;
+        overflow-y: auto;
+        /* Allow scrolling within the menu if necessary */
+    }
+
+    .off-canvas nav ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .off-canvas nav ul li {
+        margin: 15px 0;
+    }
+
+    .off-canvas nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+    }
+
+    .off-canvas button {
+        background-color: #f44336;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    /* When the menu is open, move it up */
+    .off-canvas.open {
+        bottom: 0;
+        /* Moves the menu into view */
+    }
+
+    /* Prevent background scrolling when the menu is open */
+    body.menu-open {
+        overflow: hidden;
+        /* Disable body scroll */
+    }
+
+    /* Styling the open button */
+    .open-btn {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Off-Canvas Menu from Bottom</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="content">
+        <button class="open-btn">Open Menu</button>
+        <h1>Welcome to the Page!</h1>
+        <p>Click the button to open the Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque facilis explicabo repudiandae quisquam suscipit eveniet voluptates eos quo soluta cum temporibus incidunt ullam molestias, rem esse vel nisi voluptatum voluptate dolorem libero ad ducimus id. Omnis laboriosam obcaecati at sunt repudiandae reiciendis, quas ducimus voluptatem quasi accusantium dolorum corporis reprehenderit. Corrupti excepturi in expedita dignissimos assumenda reiciendis facilis laboriosam veniam voluptatibus molestiae incidunt, repudiandae repellendus provident unde soluta cupiditate cum illo dolore enim. Dicta quibusdam, a est magnam repudiandae quidem vero voluptate. Tenetur placeat illum soluta quas voluptatibus rerum ipsam quibusdam molestiae quis culpa? Ducimus delectus, debitis suscipit velit illo officiis. Accusantium labore maiores corrupti aliquam numquam odio obcaecati. Tempore consectetur possimus, vero nesciunt rem, quod sit vitae necessitatibus voluptatem quibusdam ut ad quisquam! Sapiente voluptatibus temporibus unde sint, rerum eveniet repudiandae laudantium, neque labore maxime aut! Corrupti perspiciatis neque vero, quidem temporibus numquam aliquam maxime, nobis expedita possimus placeat, deleniti odio asperiores earum delectus assumenda aspernatur tenetur similique quisquam dolore recusandae tempore modi. Totam assumenda numquam obcaecati debitis quod deserunt vero labore, itaque ut voluptates distinctio facere alias possimus laudantium! Dolorum doloribus suscipit voluptatem laboriosam sequi aperiam animi autem, quod, perferendis vel natus. Ipsum provident laborum porro repellat, ipsa ad odio impedit! Hic, ducimus? Accusamus reiciendis veritatis, explicabo dicta temporibus nulla at unde, officiis debitis et itaque, ipsa nostrum expedita quisquam dolore ipsum! Modi, dolor sequi atque non, quis repudiandae voluptate ea amet expedita id sint rem labore natus nobis ducimus eius distinctio impedit totam illo. Nemo impedit consequatur placeat nesciunt iste quasi id eaque nam corrupti sint cumque itaque ipsum numquam ducimus pariatur, sunt nostrum earum necessitatibus amet aut? Eveniet laboriosam fuga beatae aperiam pariatur blanditiis accusamus quo, ut facilis tempore rem! Quae ipsam adipisci commodi, nulla eius iusto modi, fuga repellendus vel iure sint perferendis. Eum cumque exercitationem similique vel, possimus recusandae saepe soluta obcaecati reiciendis explicabo velit ipsam, magnam ullam numquam iste officia alias beatae labore autem maxime modi. Optio totam repudiandae impedit possimus porro, quis, laborum amet, quod suscipit consectetur esse aut aliquam repellendus fuga modi qui molestias exercitationem ea! Porro id et, voluptatem voluptatibus enim doloremque similique necessitatibus itaque error pariatur molestias minima quaerat odit qui culpa velit labore placeat deleniti asperiores nostrum aliquam, ipsam sapiente autem. Rem molestias totam quas dolore dicta nesciunt, ipsa laudantium quod nulla distinctio eveniet, quia iusto ut adipisci temporibus ipsam aut voluptate laborum? Nisi perspiciatis nam beatae praesentium expedita? Asperiores veniam non minus in at. Iste officiis minus corporis distinctio dolores non cumque itaque enim molestias, iusto corrupti, nostrum ad temporibus necessitatibus cupiditate error neque ratione exercitationem natus nobis. Dolor asperiores cupiditate nulla cumque autem, adipisci animi impedit eum quae blanditiis. Sed nisi tenetur est quo, cupiditate eaque quis reprehenderit illo quod eveniet aut mollitia laborum quas, iusto, vero aliquid hic labore. Reprehenderit doloribus amet, magnam voluptatibus quos id rerum quae perferendis obcaecati officiis dolor est natus at praesentium. Voluptate, optio magni eos nemo doloremque nulla ab sint consequatur tempora nisi eligendi perspiciatis, adipisci quas fugiat placeat qui sapiente ipsam! Nostrum eum ab labore quibusdam minima veniam dicta alias quasi. Hic unde eaque iure excepturi autem alias nesciunt, voluptas, necessitatibus laudantium maxime provident minus ipsa vel voluptate nulla consequuntur soluta cum, rem repudiandae perferendis debitis sint ex. Eveniet sit impedit rerum provident, similique consequuntur molestiae repellendus quis ea aut earum ratione enim corrupti libero? Deleniti minus ea quam possimus nemo corrupti molestiae sequi expedita, ipsa illo provident libero eum assumenda cupiditate, voluptatem a quas vitae impedit in obcaecati non quod delectus excepturi! Pariatur sequi cum, exercitationem quos id nam obcaecati sit officiis distinctio. Nostrum atque nam repudiandae vero ullam ipsam quae animi eaque iure laudantium magni saepe fugiat beatae, ea hic, natus error repellendus veniam eveniet quam. Ducimus nihil iste sunt molestiae aliquid reprehenderit sit animi, pariatur maiores suscipit fuga, dignissimos, natus velit in excepturi voluptates! Fugit, tempora. Id animi eveniet cum alias ipsam reprehenderit aspernatur dignissimos omnis totam voluptas aperiam quam facilis, modi quidem explicabo pariatur expedita, veniam, saepe asperiores. Iusto aut cum ut. Illo praesentium ad laborum nihil at aliquid. Incidunt dolores distinctio ab accusantium. Laboriosam, et itaque suscipit eum voluptatibus praesentium corporis neque pariatur reprehenderit, sit illum officiis! Accusamus, sequi? Fuga, sed temporibus harum nam, excepturi a neque incidunt, inventore nemo facere obcaecati delectus. Ipsam vitae officiis ab at error. Voluptatibus fugiat facilis provident voluptates aspernatur alias nihil eius quidem, iusto, autem quas quibusdam labore ipsa omnis doloribus? Veniam quas nemo cumque suscipit ullam molestias amet tempora, aliquam eos magni minus exercitationem quis distinctio maxime obcaecati. Ullam ducimus quasi ad magni iste fugiat consequatur. Omnis amet quisquam molestias laborum quo nobis eaque at, esse magnam natus repudiandae pariatur odit ipsum mollitia, impedit vel magni. Distinctio delectus quae quos fuga harum magni a porro impedit dicta nesciunt at nostrum libero magnam ipsum consequatur et voluptates sunt soluta, sit ex rerum. Autem unde quod dignissimos doloribus at nesciunt facere tempore aliquam eligendi mollitia sequi eius aspernatur saepe, sapiente officia dolorum perferendis repudiandae quidem iste deleniti fugit excepturi corporis eveniet. Explicabo rem earum obcaecati harum laborum aut quae, praesentium sed nobis aliquid vero veniam quas, consectetur quia amet quo nesciunt alias distinctio, eaque impedit dolores a maxime. Molestiae illum voluptatibus ipsam quos blanditiis ipsum hic facilis repellendus repellat, vel sint quas! Cumque maxime nam dicta. Harum voluptates, at nam dolore illum optio similique ipsam, ipsum velit atque a quidem beatae sed, delectus ducimus? Consequuntur, eveniet reprehenderit culpa, tempora quidem magni debitis veniam iusto ex autem possimus repellendus, laborum recusandae praesentium tempore hic iure vel eius perferendis vitae! Facilis officiis hic voluptate porro ullam possimus fuga itaque iure molestias modi, numquam similique fugiat minima? Quaerat libero, laborum optio nobis aspernatur, ullam nihil ipsa vitae corrupti dicta eius fugiat pariatur accusantium perferendis mollitia neque nisi ipsam dolorum inventore laudantium sapiente consequatur vel aliquid! Delectus, repellendus omnis voluptas quisquam totam, laboriosam nam molestiae iusto nostrum rem eum nisi. Nostrum, expedita nulla cum id consequatur ut, earum illo doloremque numquam accusamus repellat repudiandae qui fugit voluptates accusantium maxime amet eveniet provident cupiditate excepturi quasi? Dolorem ipsa eaque soluta tempora laudantium. Eveniet suscipit illum alias iure eaque itaque, deleniti tempore maxime eum ut, est doloremque hic? Deleniti vero ducimus impedit consectetur repellat quae dolores doloribus neque qui commodi, unde rerum dicta, tempore quisquam quasi totam? Minus dignissimos officia ad optio distinctio, quisquam deserunt debitis harum odit dicta iusto nisi hic nam perferendis dolore exercitationem est blanditiis totam ipsa animi voluptas magni error veritatis quia. Eos voluptatem nisi similique ducimus, accusantium esse hic nesciunt eaque corporis! Cupiditate voluptate ab atque impedit minus quos dicta dolorum necessitatibus corrupti nisi. Omnis illum sed rerum culpa. Ducimus ullam ex accusamus voluptates quo mollitia nam consequuntur vitae rem qui asperiores, quae quis quasi magni repudiandae molestiae minima placeat voluptatum dolor minus repellat id! Minus unde illum odio optio sunt quas, corrupti ex temporibus, voluptate, ad veritatis labore provident molestiae dolores necessitatibus explicabo? Provident totam laborum id doloremque nesciunt praesentium adipisci odio. Minus, repellat modi officiis commodi quam dignissimos! Voluptatibus excepturi minus, magni distinctio, accusantium fugit ipsum fuga totam aliquam voluptate aperiam? Laudantium, unde. Aspernatur delectus ex cupiditate laboriosam unde corporis distinctio voluptatibus maxime modi voluptates perspiciatis reprehenderit ipsa vel neque corrupti sequi maiores accusamus saepe quo, expedita ipsum perferendis doloribus earum porro? Atque, est voluptatibus hic tenetur impedit quam quas nostrum laboriosam deserunt veniam. Ducimus, aperiam eos dolorum quia vero recusandae unde mollitia nesciunt, magni, eligendi molestias. Fuga ad, et amet quae totam quo dolore enim eum ex incidunt cum suscipit quos quidem exercitationem quasi accusantium perspiciatis maiores at iusto illo expedita. Vitae, omnis dolorem! Suscipit delectus optio quaerat facere inventore ipsum ipsa expedita quasi illum. Eum recusandae officiis beatae modi maiores nulla nesciunt alias nisi odio nostrum, cum impedit quod. Aliquid rem enim mollitia accusantium suscipit blanditiis obcaecati quasi. Et, cum eos? Sequi qui minus libero enim, quis mollitia magni dicta blanditiis harum doloribus exercitationem ab ipsa neque deleniti aperiam quo totam debitis. Eius fugit impedit nam animi atque ipsam sapiente quod sed accusantium porro omnis non eum sit repudiandae, odit dicta cum accusamus pariatur? Ipsa molestias fuga, placeat dicta eos error corrupti quos tempora reiciendis beatae et velit ad minima necessitatibus ea eum explicabo! Consectetur nihil qui magni ex, deleniti impedit iusto adipisci cum aliquam iste fuga maiores fugit? Maiores ea odit, officia quasi beatae sequi nesciunt. Sunt sapiente exercitationem accusamus mollitia ut repellendus praesentium quo cupiditate voluptas ex eligendi voluptate eaque vitae ab, maxime accusantium officia, nulla tempora eum recusandae. Sint magnam eligendi eius molestiae sequi, iusto distinctio porro cupiditate quisquam, incidunt rem, eos esse suscipit tempora quasi fugiat voluptates doloribus. Adipisci cum eligendi iste fugiat laudantium veritatis quibusdam, vero nemo sequi cumque. Alias aperiam accusamus distinctio harum molestiae eius. Dolore, maiores? Totam sint repellendus quae! Quasi sequi delectus dicta odit autem incidunt hic aperiam ratione rem! Totam fuga obcaecati, eaque soluta corrupti necessitatibus ipsum veritatis! Possimus eum ex doloremque nobis laudantium obcaecati voluptatum, natus nam libero aut fugit cumque accusamus sint laboriosam! Nisi aut aliquid iste hic, ratione optio iusto reiciendis sequi modi, a vitae magnam numquam? Ducimus ad minima qui officiis nisi maiores aperiam, sunt numquam temporibus, maxime facilis possimus omnis labore perspiciatis distinctio obcaecati id expedita magnam aliquam, quae illum amet accusamus soluta. Iusto, facilis nulla deleniti dolorum voluptatem aspernatur! Corrupti dolores nesciunt minus maiores ipsum necessitatibus cupiditate saepe quibusdam. Corrupti temporibus repudiandae ratione rerum accusantium fugit culpa laborum dolorem ipsum delectus? Nisi doloribus dicta sapiente accusamus facilis. Soluta dolor enim nostrum aliquid cumque iure recusandae perferendis quos quo dolorum labore vitae, officiis repudiandae impedit iusto quas doloremque maxime ab culpa? Consequuntur quo nostrum inventore quia quisquam doloribus cum possimus sed? Nisi debitis eveniet asperiores reprehenderit quos minus delectus blanditiis earum, placeat temporibus corporis quae neque ducimus quaerat corrupti quibusdam eos dolorem laborum expedita deleniti quo. Ab libero a esse commodi deleniti iure quaerat suscipit! Quod fugit amet aperiam aliquid eos ab corrupti asperiores, quasi praesentium explicabo aut laborum natus corporis omnis dolorum nobis consectetur magni numquam sed? Consequuntur sit quidem nulla, error fugit voluptatibus consequatur necessitatibus minus quo rem est, facilis ducimus officia ullam eum. At odit, eveniet et repellat in dolor dicta blanditiis cumque eaque doloribus nemo laboriosam sint tempora totam consequatur quia illum nisi autem. Inventore nam reiciendis doloremque libero eligendi earum in voluptates impedit obcaecati! Qui, possimus sit sapiente, mollitia laboriosam nostrum quibusdam voluptatum neque natus quod earum maiores officiis. Odio natus illo fuga consequatur itaque illum doloribus, minima exercitationem nostrum? Unde sint voluptatem reiciendis voluptates ducimus. A inventore, corrupti officiis nihil nisi adipisci pariatur molestiae provident animi dolorum? Eveniet eos quo dicta reprehenderit laboriosam nesciunt, soluta omnis culpa, sapiente nulla inventore molestiae explicabo nam eum, quibusdam voluptatum possimus. Vel impedit neque et optio sapiente aspernatur assumenda suscipit eaque officiis, corrupti blanditiis alias tempore cupiditate maxime nobis! Officiis blanditiis atque, praesentium consequatur dicta quam dolorem? Architecto laborum cupiditate at placeat autem eum, similique neque rem itaque, fugit consectetur, quaerat pariatur culpa a nobis illum obcaecati. Accusantium maiores beatae veritatis perferendis, delectus quis eum cumque reiciendis, sit magni porro ad quasi dolore perspiciatis mollitia officia ducimus velit, facere culpa voluptatibus id minima suscipit exercitationem? Optio quos nobis dolor consequatur quod sit maxime, sunt quam reiciendis natus porro ipsam repudiandae explicabo? Eaque ex deleniti magnam sunt dolore nemo et vitae voluptatibus quos, veritatis blanditiis sapiente debitis, officiis quam soluta, facilis laboriosam unde recusandae corrupti cum maxime enim assumenda iste? Perspiciatis eaque illum facilis soluta cumque error tenetur atque sed. Quas labore at nihil nulla corrupti laboriosam sapiente sequi eos. Consectetur aperiam amet, vel dolorem numquam nulla ullam voluptate iure! Dolorum voluptates asperiores assumenda tempore explicabo totam quisquam, nesciunt non voluptas error. Sunt praesentium quos aliquam reprehenderit nemo consequatur a dolorum, quisquam aliquid voluptates quaerat amet nesciunt, magnam veritatis odit placeat eaque natus sequi iste ducimus voluptate! Accusamus nostrum iusto praesentium iure voluptate, soluta velit alias necessitatibus aperiam architecto inventore possimus nam hic consectetur aut! Facilis temporibus, libero repellendus consequatur, accusamus numquam, delectus molestiae in sequi quia recusandae! Quisquam laboriosam dolorem sequi perspiciatis dicta iusto fugit neque earum ullam aperiam, odio alias eligendi nemo labore maiores quos ipsam doloribus consectetur veniam inventore rem quaerat nam qui. Rem at in omnis quae. Porro molestias perspiciatis odit nulla unde officia quam quisquam dignissimos qui nihil optio, natus officiis voluptate veniam exercitationem consectetur minima accusamus aut tempore reprehenderit distinctio. Consectetur corporis dolorem voluptatem autem eius tempora dolore a, totam accusantium natus laboriosam architecto amet, cupiditate molestias quasi laborum. Ab, eius aliquam iusto, quo nulla aliquid voluptatum perspiciatis natus fuga qui ad minima odit consequuntur deserunt, vel itaque nihil voluptatibus provident dolorum? Fugit quidem adipisci voluptates expedita consequatur voluptas quae magnam ducimus laborum deserunt. Aliquid magni facere non distinctio dolore exercitationem quia quae. Ipsum facere voluptates autem consectetur similique aperiam, nihil et ad illo non quam delectus sunt amet porro impedit nemo minima ullam nisi architecto? Officia cupiditate quisquam velit. Reprehenderit nemo odio unde, mollitia, culpa, ipsum est numquam assumenda minima dicta eius ab dolorum magni suscipit ea qui molestiae quod aperiam animi deleniti totam quidem. Obcaecati debitis alias molestiae quibusdam beatae adipisci, est esse, praesentium consectetur, dolore nam illo? Iste sint dignissimos in. Laudantium modi, facilis corrupti cupiditate non nihil sit? Architecto labore veritatis quasi. Ipsa quo velit nostrum ad facere. Ex magni quia maxime enim doloribus quae voluptatibus consequuntur voluptatum deserunt sed explicabo quisquam ad amet culpa rerum doloremque autem nostrum sit corporis praesentium, consectetur repudiandae nulla nisi excepturi. Beatae, earum alias. Accusantium ab soluta in porro deleniti provident consectetur minus possimus quis debitis. Ut cum magni harum repellendus optio, natus sequi ducimus vitae aliquam doloribus illum veniam accusamus ullam corrupti magnam repudiandae! Voluptates rem iure quia possimus quisquam, ipsum facilis alias minima consequuntur adipisci sit fuga reiciendis maiores? Natus, exercitationem eveniet. Doloribus porro hic iste! Libero hic placeat excepturi asperiores provident, quis quasi assumenda minima odio optio, cupiditate quas magnam? Saepe magni expedita velit totam, temporibus consectetur laudantium vel unde suscipit similique fuga atque tempora labore quaerat! Perspiciatis, fugiat deleniti ducimus eligendi officia aspernatur laboriosam dolores illo qui commodi suscipit, autem sint inventore. Cumque rerum dolorum fugit voluptatibus animi atque et ipsum deleniti libero ipsa vitae earum a saepe quaerat error, necessitatibus soluta obcaecati neque ducimus recusandae officiis explicabo ratione mollitia. Ex perferendis, saepe assumenda inventore, odit labore cumque architecto voluptatibus soluta perspiciatis dolore voluptatem maiores, voluptatum hic dolorem consequuntur! Quasi et illo saepe illum minima atque impedit itaque neque laborum. Quos eveniet sunt quaerat blanditiis nostrum voluptatibus veniam tempore nulla obcaecati? Sapiente ratione nemo recusandae, autem repudiandae labore fuga assumenda error ea iure molestiae voluptatem atque optio perferendis magni hic ipsam explicabo maxime quisquam odit impedit? Culpa in eaque accusantium corrupti reprehenderit, neque iusto placeat magnam quasi a consequatur nemo inventore tenetur, officia assumenda quidem eius distinctio quas quibusdam debitis sed itaque? Earum eveniet illo sequi vel explicabo exercitationem est ducimus id officiis, in facilis, voluptas fugiat deserunt voluptatum et quos ut possimus maiores. Architecto quia eum ea illo repellat similique officia ut expedita quod. Quas omnis, illo tenetur libero sapiente nam at enim eligendi praesentium dolorum, culpa inventore ut debitis, numquam iste repudiandae sed sunt animi delectus maxime saepe sint laboriosam et est? Velit laborum reiciendis consequatur perferendis architecto, ut obcaecati quae cum dignissimos ab sapiente ullam minima culpa quia, iste officia quos, reprehenderit ea magnam! Qui, optio nobis rerum numquam ut impedit ad eaque odit eligendi illum cum sunt aperiam nesciunt quo officiis ducimus vitae ab enim fugit ipsum! Officia ullam et repellat quam minima itaque sunt ratione mollitia accusamus dolores vero, iusto, molestias voluptatibus magnam ipsa magni, delectus sed minus voluptas inventore repudiandae iure sequi id. Minima aliquam quae quaerat accusamus, iure harum cumque ullam doloremque dolores at. Ratione ipsum doloremque facere. Necessitatibus facilis itaque inventore quaerat ipsum modi voluptatibus perferendis soluta illum praesentium reiciendis, fuga, sequi quasi. Velit quaerat iusto voluptatem quae neque vitae quos dolor perferendis ipsum iure, dolorem rerum qui in doloribus nobis obcaecati dignissimos similique aliquid praesentium accusantium sequi nihil quidem. Est, sint quidem saepe dolores quod nihil quaerat nemo voluptatum doloribus laudantium odio rerum culpa nostrum id temporibus dolore delectus consectetur nam dolorem! Commodi eum quae eos accusamus, ad blanditiis repudiandae quia laborum reprehenderit dignissimos vel numquam illum tenetur consequatur soluta saepe? Molestiae cupiditate ut, mollitia quia quae veritatis neque sed molestias ab consequatur recusandae dicta repellendus! Ipsam eveniet nisi natus voluptates sequi quibusdam perferendis ab eaque odio est accusantium cum, rerum ducimus at vero qui. Quidem tempora id, velit quas magni aliquam, dolor itaque distinctio dolorem dignissimos amet blanditiis ratione dolorum esse laborum ab aperiam qui inventore facere voluptates? Omnis, molestias corrupti. Iste, eum nemo. Repellat quo repellendus ipsa id repudiandae quod voluptate neque asperiores eaque veniam dolore dolorum veritatis vitae minima et, quia dicta ad, delectus voluptatum ea iusto dolorem totam aperiam tempore? Temporibus earum, commodi officiis quo praesentium omnis pariatur officia illo dicta? Hic rem saepe quis odit enim numquam deleniti odio sed molestias expedita sapiente iusto rerum modi assumenda earum voluptas mollitia, distinctio officiis. Laboriosam culpa quos esse sequi maiores temporibus? Explicabo dolorem rem ab in architecto temporibus voluptas laboriosam voluptatibus inventore est? Repudiandae dicta deleniti ratione vitae repellendus aperiam corporis sequi fugit. Enim fugiat voluptas doloribus iusto dolorem sed alias quos quam iure eveniet animi distinctio, pariatur non dignissimos numquam eos molestiae repudiandae odio atque voluptates ipsa sit. Cumque sapiente deleniti dicta porro temporibus quibusdam hic ut ullam quaerat ad libero suscipit ducimus adipisci, est illo id nemo eligendi iure eveniet animi. Ex accusantium veniam dolores, consequatur dolor culpa dolorum sit nemo repudiandae cum facere enim commodi, sint corrupti. Consectetur at maiores totam autem mollitia tempora. Laboriosam nostrum ducimus expedita sapiente impedit. Eveniet ea ab quo totam vitae iste iusto quibusdam expedita aspernatur, eligendi natus fuga! Illum est nulla dolores! Eveniet doloremque, atque ullam praesentium sapiente harum eaque possimus, sit quas corporis placeat quos dolorem numquam commodi veniam dolore quia deleniti! Saepe, omnis reiciendis! Deleniti, iure? Debitis omnis earum et commodi, dolore expedita, porro dicta amet, doloribus sapiente quaerat aliquam molestias pariatur exercitationem non tempore architecto iste iure natus necessitatibus suscipit nam? Facere pariatur asperiores doloremque eveniet consequuntur. off-canvas menu.</p>
+    </div>
+
+    <!-- Off-Canvas Menu -->
+<!-- <div class="off-canvas">
+        <button class="close-btn">Close</button>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <script>
+        // Get elements
+        const openBtn = document.querySelector('.open-btn');
+        const closeBtn = document.querySelector('.close-btn');
+        const offCanvas = document.querySelector('.off-canvas');
+        const body = document.querySelector('body');
+
+        // Open menu when the open button is clicked
+        openBtn.addEventListener('click', () => {
+            offCanvas.classList.add('open');
+            body.classList.add('menu-open'); // Disable scrolling on background
+        });
+
+        // Close menu when the close button is clicked
+        closeBtn.addEventListener('click', () => {
+            offCanvas.classList.remove('open');
+            body.classList.remove('menu-open'); // Enable scrolling on background again
+        });
+
+
+    </script>
+
+</body> -->
+
+<!-- </html> -->

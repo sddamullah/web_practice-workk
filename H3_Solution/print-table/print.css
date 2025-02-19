@@ -1,0 +1,66 @@
+#tab-row td {
+  font-size: 8px;
+  padding: 0;
+}
+
+#tab-row th {
+  font-size: 10px;
+  padding: 0;
+  border-bottom: 0px !important;
+}
+#name {
+  width: 94px !important;
+  padding: 0px;
+  font-size: 14px;
+}
+#desig {
+  width: 103px !important;
+  padding: 0px;
+  font-size: 14px;
+}
+table {
+  width: 100%;
+}
+#name-h {
+  width: 89px !important;
+  padding: 0px;
+  font-size: 14px;
+}
+#desig-h {
+  width: 90px !important;
+  padding: 0px;
+  font-size: 14px;
+}
+/* #headprint {
+    position: fixed !important ;
+    top: 0px;
+  } */
+/* .print-footer {
+   position: fixed; 
+  bottom: 0;
+} */
+/* .screen-footer {
+  display: none;
+} */
+
+.screen-tab {
+  display: none !important;
+}
+#print-tab {
+  display: block;
+}
+.print-footer {
+  position: fixed;
+  bottom: 100px;
+  z-index: 999;
+}
+.b-line {
+  position: fixed;
+  bottom: 0;
+  width: 100% !important;
+}
+.b-line2 {
+  position: fixed;
+  bottom: 0px;
+  width: 100% !important;
+}

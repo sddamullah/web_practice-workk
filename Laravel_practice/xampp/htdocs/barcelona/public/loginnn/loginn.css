@@ -1,0 +1,42 @@
+.fc {
+    color: rgb(254, 161, 22) !important;
+}
+.bg {
+    background-color: rgb(15, 23, 43) !important;
+}
+.btnc {
+    background-color: rgb(254, 175, 57) !important;
+}
+.y_hover:hover {
+    color: rgb(254, 161, 22);
+}
+.card { 
+    margin-top: 50px ;
+    background-color: rgb(15, 23, 43) !important    ;
+    color: white !important;
+    box-shadow: 2px 2px 2px black;
+     box-shadow: -2px -2px 5px rgb(15, 23, 43);
+}
+.card-header{
+    background-color:rgb(254, 175, 57)  !important;
+    font-weight: 600;
+    font-size: 18px;
+}
+.card button{
+    background-color: rgb(254, 175, 57) ;
+    border: none;
+}
+.card button:hover{
+    background-color:rgba(254, 175, 57, 0.916) !important;
+}
+
+body {
+    width: 100%;
+    background: url(../img/bg-hero.jpg);
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+   
+}

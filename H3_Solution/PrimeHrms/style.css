@@ -1,0 +1,210 @@
+@media all and (min-width: 30px) and (max-width: 420px) {
+  .container-fluid {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+
+    /* background-color: red; */
+  }
+  .logocol {
+    background-color: rgb(155, 220, 249);
+    overflow: hidden;
+    height: 200px;
+    /* border-bottom-left-radius: 100%; */
+    border-bottom-right-radius: 50% 4%;
+    border-bottom-left-radius: 50% 4%;
+  }
+
+  .logocol img {
+    transform: translatey(70%);
+    width: 70%;
+    margin-left: 30px;
+  }
+  .title {
+    position: relative;
+    top: 10%;
+  }
+  .form {
+    position: relative;
+    top: 10%;
+    padding: 0px 20px;
+  }
+}
+@media all and (min-width: 420px) and (max-width: 768px) {
+  .container-fluid {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+
+    /* background-color: red; */
+  }
+  .logocol {
+    background-color: rgb(155, 220, 249);
+    overflow: hidden;
+    height: 300px;
+    /* border-bottom-left-radius: 100%; */
+    border-bottom-right-radius: 50% 4%;
+    border-bottom-left-radius: 50% 4%;
+  }
+
+  .logocol img {
+    transform: translatey(40%);
+    width: 70%;
+    margin-left: 30px;
+  }
+  .title {
+    position: relative;
+    top: 10%;
+  }
+  .form {
+    position: relative;
+    top: 10%;
+    padding: 0px 20px;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 919px) {
+  .container-fluid {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+
+    /* background-color: purple; */
+  }
+
+  .logocol {
+    background-color: rgb(155, 220, 249);
+    /* overflow: hidden; */
+    height: 807px;
+    /* border-bottom-left-radius: 100%; */
+    border-bottom-right-radius: 48% 99%;
+    padding-bottom: 200px;
+  }
+
+  .logocol img {
+    transform: translatey(170%);
+
+    width: 80%;
+  }
+  .title {
+    position: relative;
+    top: 5%;
+  }
+  .form {
+    position: relative;
+    top: 5%;
+    padding: 0px 30px;
+    /* width: 40%; */
+  }
+}
+@media all and (min-width: 920px) and (max-width: 1440px) {
+  .container-fluid {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    /* overflow: hidden; */
+    /* background-color: blue; */
+  }
+
+  .logocol {
+    background-color: rgb(155, 220, 249);
+    overflow: hidden;
+    height: 807px;
+    /* border-bottom-left-radius: 100%; */
+    border-bottom-right-radius: 100%;
+  }
+
+  .logocol img {
+    transform: translatey(100%);
+    width: 80%;
+  }
+  .title {
+    position: relative;
+    top: 20%;
+  }
+  .form {
+    position: relative;
+    top: 20%;
+    padding: 0px 100px;
+  }
+  .form p {
+    font-size: 48px;
+  }
+  /* .form input {
+    width: 50px;
+  } */
+}
+@media screen and (min-width: 1441px) {
+  .container-fluid {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+
+    /* background-color: green; */
+  }
+
+  .logocol {
+    background-color: rgb(155, 220, 249);
+
+    overflow: hidden;
+    height: 807px;
+    /* border-bottom-left-radius: 100%; */
+    border-bottom-right-radius: 100%;
+  }
+
+  .logocol img {
+    transform: translatey(100%);
+    width: 80%;
+  }
+  .title {
+    position: relative;
+    top: 20%;
+  }
+  .form {
+    position: relative;
+    top: 20%;
+    padding: 0px 160px;
+  }
+
+  .form p {
+    font-size: 48px;
+  }
+  /* .form input {
+    width: 50px;
+  } */
+}
+
+.name {
+  box-shadow: 2px 2px 4px rgba(128, 128, 128, 0.561);
+  color: rgba(128, 128, 128, 0.744);
+}
+.name:focus {
+  box-shadow: 2px 2px 4px rgba(128, 128, 128, 0.561) !important;
+  /* outline: none !important; */
+  /* border-color: none !important; */
+}
+
+.font {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  /* padding: 0px 20px; */
+
+  font-style: normal;
+}
+
+.input-group i,
+.input-group span {
+  position: absolute;
+  top: 35px;
+  left: 20px;
+  color: #808080;
+  font-size: 14px;
+  z-index: 2;
+  
+ 
+}
+
+
+.logocol img {
+  width: 80%;
+}

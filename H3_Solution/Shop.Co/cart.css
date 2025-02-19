@@ -1,0 +1,362 @@
+.home-cont {
+  width: 90%;
+  margin: auto;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.text-sec {
+  color: gray;
+}
+.paginatio {
+  margin-top: 22px;
+}
+.cart-cont-ht {
+  margin-top: 0px;
+  font-size: 38px;
+}
+.cart-container {
+  display: grid;
+  grid-template-columns: 7fr 5fr;
+  gap: 20px;
+  margin-bottom: 7%;
+}
+.summary .head-t {
+  font-size: 23px;
+}
+.summary {
+  padding: 3.5% 5% 3% 5%;
+  max-height: fit-content;
+}
+.cart-container .summary,
+.cart-container .cart {
+  border: 1px solid rgb(240, 240, 240);
+  border-radius: 20px;
+}
+.cart .cart-item {
+  display: flex;
+  padding: 2.5% 3% 1.5% 3%;
+  gap: 15px;
+}
+.cart .cart-item .cart-img img {
+  width: 100%;
+}
+.cart .cart-item .cart-img {
+  width: 150px;
+  height: 118px;
+  overflow: hidden;
+  background-color: rgb(240, 240, 240);
+  border-radius: 10px;
+}
+.cart .cart-item .card-text {
+  margin: 0px;
+  font-size: 14px;
+}
+
+.car-heading {
+  font-size: 19px !important;
+  font-weight: 600;
+  margin-bottom: -1px;
+}
+
+.cart-item .fa-trash-can {
+  font-size: 18px;
+  color: rgb(255, 51, 51);
+  cursor: pointer;
+}
+
+.counter {
+  background-color: rgb(240, 240, 240);
+  border-radius: 100px;
+  padding: 5px 2px 5px 2px;
+  /* line-height: 74px; */
+  /* margin-top: 9px; */
+}
+.counter button {
+  border: 0px;
+  font-size: 18px;
+  text-align: center;
+  width: 38px;
+  background: transparent;
+}
+
+.counter input {
+  font-size: 18px;
+  border: 0px;
+  text-align: center;
+  width: 38px !important;
+  background: transparent;
+  height: 30px;
+}
+.counter input:focus {
+  outline: 0px;
+}
+
+.counter input:focus {
+  outline: 0px;
+}
+.cart-item-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.summary-text p {
+  font-size: 19px;
+  margin-bottom: 13px;
+  margin-top: 3px;
+}
+.summary-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-top: 10px;
+}
+.summary-btn input[type="text"]:focus {
+  outline: 0px;
+}
+.summary-btn input[type="text"] {
+  background-color: rgb(240, 240, 240);
+  color: black;
+  font-size: 18px;
+  font-size: 16px;
+  border: 0px;
+  width: 70%;
+  padding: 0rem 1rem 0rem 2.5rem;
+  height: 45px;
+  border-radius: 30px;
+}
+.summary-btn input[type="text"]::placeholder {
+  color: rgba(128, 128, 128, 0.704);
+}
+.summary-btn .fa-tag {
+  position: absolute;
+  font-size: 20px;
+  top: 16px;
+  left: 16px;
+  color: rgba(128, 128, 128, 0.367);
+}
+.summary-btn input[type="button"] {
+  background: black;
+  color: white;
+  border-radius: 30px;
+  width: 27%;
+  height: 45px;
+  border: none;
+  padding: 0px 0px 2px 0px;
+}
+.checkout {
+  background-color: black;
+  color: white;
+  width: 100%;
+  /* font-size: 18px; */
+  height: 57px;
+  margin-top: 25px;
+  border: 0px;
+  border-radius: 30px;
+  margin-bottom: 20px;
+}
+.checkout .fa-solid {
+  margin-left: 10px;
+}
+@media screen and (max-width: 767px) {
+  .home-cont {
+    width: 95%;
+    margin: auto;
+  }
+  .cart-container {
+    display: flex;
+    padding: 0px;
+    gap: 0px;
+    padding: 0px;
+    flex-wrap: wrap;
+  }
+  .cart .cart-item {
+    display: flex;
+    padding: 15px 10px;
+    gap: 5px;
+  }
+
+  .cart .cart-item .cart-img {
+    width: 100px;
+    max-height: 90px;
+  }
+  .cart {
+    margin: auto;
+    width: 100%;
+  }
+  .summary {
+    margin: auto;
+    padding: 10px 10px 0px 10px;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .car-heading {
+    font-size: 15px !important;
+    font-weight: 700;
+    margin-bottom: 0px;
+    line-height: 22px;
+  }
+  .cart .cart-item .card-text {
+    font-size: 12px;
+  }
+  .cart-item .fa-trash-can {
+    font-size: 15px;
+  }
+  .summary-btn input[type="text"] {
+    width: 60vw;
+    padding: 0rem 1rem 4px 2.5rem;
+    height: 42px;
+    font-size: 15px;
+  }
+  .summary-btn input[type="text"]::placeholder {
+    font-size: 14px;
+  }
+  .summary-btn input[type="button"] {
+    background: black;
+    color: white;
+    border-radius: 30px;
+    width: 25vw;
+    height: 42px;
+    font-size: 14px;
+  }
+  .cart-cont-ht {
+    margin: 0px;
+    font-size: 27px;
+    height: 55px;
+  }
+  .paginatio {
+    margin: 0px;
+    line-height: 50px;
+    height: 40px;
+    font-size: 14px;
+  }
+
+  .cart-item-price p {
+    font-size: 16px !important;
+    margin: 0px !important;
+  }
+  .counter {
+    background-color: rgb(240, 240, 240);
+    border-radius: 100px;
+    padding: 0px 3% 0px 3%;
+  }
+  .counter button {
+    font-size: 15px !important;
+    width: 22px !important;
+  }
+  .counter input {
+    font-size: 15px;
+    border: 0px;
+    text-align: center;
+    width: 30px !important;
+    background: transparent;
+    height: 30px;
+  }
+  .cart-item-price {
+    margin-top: 0px;
+  }
+  .cart .cart-item .cart-img img {
+    height: 90px;
+  }
+  .summary-btn .fa-tag {
+    top: 11px;
+  }
+  .checkout {
+    height: 41px;
+    font-size: 14px;
+  }
+  .summary .head-t {
+    font-size: 18px;
+  }
+  .summary-text p {
+    font-size: 15px;
+    margin-bottom: 13px;
+    margin-top: 0px;
+  }
+  .summary-btn {
+    margin-top: 5px;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1240px) {
+  .summary-btn input[type="text"] {
+    width: 20vw;
+    padding: 0rem 1rem 4px 2.5rem;
+    height: 40px;
+    font-size: 15px;
+  }
+  .summary-btn input[type="text"]::placeholder {
+    font-size: 14px;
+  }
+  .summary-btn input[type="button"] {
+    background: black;
+    color: white;
+    border-radius: 30px;
+    width: 80px;
+    height: 40px;
+    font-size: 14px;
+  }
+  .summary {
+    width: 100%;
+
+    padding: 10px 10px 0px 10px;
+  }
+  .summary-btn .fa-tag {
+    top: 11px;
+  }
+  .checkout {
+    height: 43px;
+    font-size: 14px;
+  }
+  .cart-container {
+    gap: 10px;
+  }
+  .cart-item-price p {
+    font-size: 18px !important;
+  }
+  .counter {
+    padding: 2px 2px 2px 2px;
+  }
+  .counter button {
+    font-size: 16px;
+    width: 35px;
+  }
+  .counter input {
+    font-size: 15px;
+    width: 30px !important;
+  }
+  .cart-item .fa-trash-can {
+    font-size: 18px;
+  }
+  .cart .cart-item .cart-img {
+    width: 110px;
+    height: 100px;
+  }
+  .car-heading {
+    font-size: 17px !important;
+  }
+  .summary .head-t {
+    font-size: 20px;
+  }
+  .cart-cont-ht {
+    font-size: 30px;
+  }
+  .summary-text p {
+    font-size: 16px !important;
+    margin-bottom: 13px;
+    margin-top: 0px;
+  }
+}
+
+/* .home-cont {
+    width: 95%;
+    margin: auto;
+  }.home-cont {
+  width: 85%;
+  margin: auto;
+}@media screen and (min-width: 767px) and (max-width: 1220px) {
+  .home-cont {
+    width: 90%;
+    margin: auto;
+  } */

@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iportfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="asset/silk/slick/slick-theme.css">
+    <link rel="stylesheet" href="asset/silk/slick/slick.css">
+    <link rel="stylesheet" href="asset/silk/slick/fonts/slick.woff">
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <a class="d-md-none d-block canva-bar" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+        aria-controls="offcanvasExample">
+        <i class="fa-solid fa-bars"></i>
+    </a>
+    <!-- Hero 6 - Bootstrap Brain Component -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class=" fisrtcol d-md-none d-block   ">
+            <div class="clos-canva bg-dark px-4" style="width:fit-content;position:absolute; right:10px;">
+                <button type="button" class="bg-dark mt-3 text-white border-0  " data-bs-dismiss="offcanvas"
+                    aria-label="Close">
+                    X</button>
+            </div>
+            <div class="text-white bg-dark sidebar">
+                <a href="#contact" class="align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none"
+                    aria-label="Close" data-bs-dismiss="offcanvas">
+                    <img src="/asset/my-profile-img.jpg" class="img-fluid rounded-pill w-50 mt-5 sideimg shadow  "
+                        alt="" aria-label="Close" data-bs-dismiss="offcanvas">
+                    <p class="h3 text-center me-md-4 mb-3" aria-label="Close" data-bs-dismiss="offcanvas">Alex Smith</p>
+                </a>
+                <div class="side-icon">
+                    <a href="https://www.facebook.com/login.php/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://twitter.com/login"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.skype.com/en/"><i class="fa-brands fa-skype"></i></a>
+                    <a href="https://www.linkedin.com/login"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <ul class="nav nav-pills flex-column me-0 mt-3 mb-auto">
+                    <li class="nav-item">
+                        <a href="#heade" class="nav-link d-flex justify-content-baseline" aria-current="page">
+                            <i class="fa-solid fa-house me-4"></i>
+                            <p class="fs-5" aria-label="Close" data-bs-dismiss="offcanvas">Home</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link d-flex justify-content-baseline" aria-current="page">
+                            <i class="fa-regular fa-user me-4"></i>
+                            <p class="fs-5" aria-label="Close" data-bs-dismiss="offcanvas">About</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#resume" class="nav-link d-flex justify-content-baseline " aria-current="page">
+                            <i class="fa-regular fa-file me-4"></i>
+                            <p class="fs-5" aria-label="Close" data-bs-dismiss="offcanvas">Resume</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#portfolio" class="nav-link d-flex justify-content-baseline " aria-current="page">
+                            <i class="fa-regular fa-images me-4"></i>
+                            <p class="fs-5" aria-label="Close" data-bs-dismiss="offcanvas">Portfolio</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#services" class="nav-link d-flex justify-content-baseline " aria-current="page">
+                            <i class="fa-solid fa-server me-4"></i>
+                            <p class="fs-5" aria-label="Close" data-bs-dismiss="offcanvas">Services</p>
+                        </a>
+                    </li>
+                    <li class="nav-item d-flex justify-content-between">
+                        <a href="#" class="nav-link d-flex justify-content-baseline " aria-current="page">
+                            <i class="fa-solid fa-cubes me-4"></i>
+                            <p class="fs-5" aria-label="Close" data-bs-dismiss="offcanvas">Dropdown</p>
+                        </a>
+                        <div class="dropdown me-5">
+                            <button class=""><i class="fa-solid fa-chevron-right "></i></button>
+                            <div class="dropdown-content">
+                                <a href="#">Action</a>
+                                <a href="#">Another Action</a>
+                                <div class="nested-dropdown">
+                                    <a href="#">Submenu</a>
+                                    <div class="nested-dropdown-content">
+                                        <a href="#">Submenu Item 1</a>
+                                        <a href="#">Submenu Item 2</a>
+                                        <a href="#">Submenu Item 3</a>
+                                    </div>
+                                </div>
+                                <a href="#">Something Else</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link d-flex justify-content-baseline " aria-current="page">
+                            <i class="fa-regular fa-address-book me-4"></i>
+                            <p class="fs-5" aria-label="Close" data-bs-dismiss="offcanvas">Contact</p>
+                        </a>
+                    </li>
+                </ul>
+                <hr>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row ">
+            <div class="col-md-2 fisrtcol d-none d-md-block">
+                <div class="text-white bg-dark sidebar">
+                    <a href="#contact" class="mb-3 mb-md-0 text-white text-decoration-none">
+                        <img src="/asset/my-profile-img.jpg"
+                            class="img-fluid rounded-pill ms-md-5 mt-3 w-50 sideimg shadow" alt="">
+                        <p class="h3 text-center me-md-4 mb-3">Alex Smith</p>
+                    </a>
+                    <div class="side-icon">
+                        <a href="https://www.facebook.com/login.php/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""> <i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://twitter.com/login"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://www.skype.com/en/"><i class="fa-brands fa-skype"></i></a>
+                        <a href="https://www.linkedin.com/login"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <ul class="nav nav-pills flex-column me-0 mt-3 mb-auto">
+                        <li class="nav-item">
+                            <a href="#heade" class="nav-link d-flex justify-content-baseline" aria-current="page">
+                                <i class="fa-solid fa-house me-4"></i>
+                                <p class="mt-1">Home</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#about" class="nav-link d-flex justify-content-baseline" aria-current="page">
+                                <i class="fa-regular fa-user me-4"></i>
+                                <p class="mt-1">About</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#resume" class="nav-link d-flex justify-content-baseline" aria-current="page">
+
+                                <i class="fa-regular fa-file me-4"></i>
+                                <p class="mt-1">Resume</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#portfolio" class="nav-link d-flex justify-content-baseline " aria-current="page">
+                                <i class="fa-regular fa-images me-4"></i>
+                                <p class="mt-1">Portfolio</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#services" class="nav-link d-flex justify-content-baseline" aria-current="page">
+                                <i class="fa-solid fa-server me-4"></i>
+                                <p class="mt-1">Services</p>
+                            </a>
+                        </li>
+                        <li class="nav-item d-flex" style="justify-content:flex-start;">
+                            <a href="#" class="nav-link d-flex" aria-current="page">
+                                <i class="fa-solid fa-cubes me-3"></i>
+                                <p class="mt-1">Dropdown</p>
+                            </a>
+                            <div class="dropdown">
+                                <button class=" mt-2"><i class="fa-solid fa-chevron-right"></i></button>
+                                <div class="dropdown-content">
+                                    <a href="#">Action</a>
+                                    <a href="#">Another Action</a>
+                                    <div class="nested-dropdown">
+                                        <a href="#">Submenu</a>
+                                        <div class="nested-dropdown-content">
+                                            <a href="#">Submenu Item 1</a>
+                                            <a href="#">Submenu Item 2</a>
+                                            <a href="#">Submenu Item 3</a>
+                                        </div>
+                                    </div>
+                                    <a href="#">Something Else</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link d-flex justify-content-baseline" aria-current="page">
+                                <i class="fa-regular fa-address-book me-4"></i>
+                                <p class="mt-1">Contact</p>
+                            </a>
+                        </li>
+                    </ul>
+                    <hr>
+
+                </div>
+            </div>
+            <div class="col-md-10 seccol  ">
+                <div class="hero-container">
+                    <img src="asset/profile.webp" id="heade" class="hero b-shadow" alt="">
+                    <div class="hero-text">
+                        <p class="head h1"> Alex Smith </p>
+
+
+                        <h4 class="h3 pb-1" style="border-bottom: 4px solid rgb(20, 157, 221); width: fit-content;"
+                            id="text"> I am a
+                            Developer <span id="cursor" class="fs-1">|</span></h4>
+
+                    </div>
+                </div>
+                <!-- <div class="hero-text  ">
+                    <p class="head  h1 "> Alex Smith </p>
+                    <h4 class="h3 pb-1" style="border-bottom: 4px solid rgb(20, 157, 221); width: fit-content;" id="text"> I am a Developer <span id="cursor" class="fs-1">|</span></h4>
+                </div> -->
+                <!-- About section start -->
+                <div class="container about mt-5  pb-5 " id="about">
+                    <div class="row h-box">
+                        <div class="col-md-12 box ">
+                            <h1 class="" id="about">About</h1>
+                            <p class="fa-normal mb-4">Magnam dolores commodi suscipit. Necessitatibus eius consequatur
+                                ex
+                                aliquid
+                                fuga eum
+                                quidem. Sit sint consectetur velit.
+                                Quisquam quos quisquam cupiditate. Et nemo qui impedit susci</p>
+                        </div>
+                        <div class="col-md-4 box ">
+                            <img src="/asset/my-profile-img.jpg" class="img-fluid b-shadow" style="height: 70vh;"
+                                alt="">
+                        </div>
+                        <div class="col-md-8 box">
+                            <h3 class="fw mt-5 mt-md-0">
+                                UI/UX Designer & Web Developer.
+                            </h3>
+                            <i class="fa-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor incididunt
+                                ut labore et dolore magna
+                                aliqua.</i>
+                            <div class="row mt-3">
+                                <div class="col-md-6 d-flex mt-4">
+                                    <i class="fa-solid fa-chevron-right mt-1 fs-5 me-3 text-primary"></i>
+                                    <p class="fa-normal"><span class="h5">Birthday:</span>
+                                        1 May 1995</p>
+                                </div>
+                                <div class="col-md-6 d-flex mt-2 mt-md-4 ">
+                                    <i class="fa-solid fa-chevron-right mt-1 fs-5 me-3 text-primary"></i>
+                                    <p class="fa-normal"><span class="h5">Age:</span>
+                                        30</p>
+                                </div>
+                                <div class="col-md-6 d-flex mt-2 mt-md-4  ">
+                                    <i class="fa-solid fa-chevron-right mt-1 fs-5 me-3 text-primary"></i>
+                                    <p class="fa-normal"><span class="h5">Website:</span>
+                                        www.example.com</p>
+                                </div>
+                                <div class="col-md-6 mt-2 mt-md-4 d-flex">
+                                    <i class="fa-solid fa-chevron-right mt-1 fs-5 me-3 text-primary"></i>
+                                    <p class="fa-normal"><span class="h5">Degree:
+                                        </span>
+                                        Master</p>
+                                </div>
+                                <div class="col-md-6 d-flex mt-2 mt-md-4 ">
+                                    <i class="fa-solid fa-chevron-right mt-1 fs-5 me-3 text-primary"></i>
+                                    <p class="fa-normal"><span class="h5">Phone:</span>
+                                        +123 456 7890</p>
+                                </div>
+                                <div class="col-md-6 d-flex mt-2 mt-md-4 ">
+                                    <i class="fa-solid fa-chevron-right mt-1 fs-5 me-3  text-primary"></i>
+                                    <p class="fa-normal"><span class="h5">Email::</span>
+                                        email@example.com</p>
+                                </div>
+                                <div class="col-md-6 mt-2 mt-md-4 d-flex">
+                                    <i class="fa-solid fa-chevron-right mt-1 fs-5 me-3  text-primary"></i>
+                                    <p class="fa-normal"><span class="h5">City: </span>
+                                        New York, USA</p>
+                                </div>
+                                <div class="col-md-6 d-flex mt-2 mt-md-4 ">
+                                    <i class="fa-solid fa-chevron-right mt-1 fs-5 me-3 text-primary"></i>
+                                    <p class="fa-normal"><span class="h5">Freelance:
+                                        </span>Available</p>
+                                </div>
+
+                                <p class="fa-normal ">Officiis eligendi itaque labore et dolorum mollitia officiis optio
+                                    vero. Quisquam sunt adipisci omnis et ut. Nulla
+                                    accusantium dolor incidunt officia tempore. Et eius omnis. Cupiditate ut dicta
+                                    maxime officiis quidem quia. Sed et
+                                    consectetur qui quia repellendus itaque neque.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="row px-md-3 about2 box">
+                        <div class="col-md-3 px-md-0 pe-5">
+                            <div class="d-flex justify-content-center">
+                                <i class="fa-regular fa-face-smile"></i>
+                                <p class="h2 text-dark ">232</p>
+                            </div>
+                            <p class="w-50 float-end"><span class="fw">Happy Clients</span> consequuntur quae</p>
+                        </div>
+                        <div class="col-md-3 px-md-0 pe-5">
+                            <div class="d-flex justify-content-center">
+                                <i class="fa-regular fa-file  "></i>
+                                <p class="h2 text-dark  ">521</p>
+                            </div>
+                            <p class="w-50 float-end"><span class="fw">Projects adipisci</span> atque cum quia aut
+                            </p>
+                        </div>
+                        <div class="col-md-3 px-md-0 pe-5">
+                            <div class="d-flex justify-content-center">
+                                <i class="fa-solid fa-headphones-simple"></i>
+                                <p class="h2 text-dark ">1453</p>
+                            </div>
+                            <p class="w-50 float-end"> <span class="fw">Hours Of Support</span> aut commodi quaerat
+                            </p>
+                        </div>
+                        <div class="col-md-3 px-md-0 pe-5">
+                            <div class="d-flex justify-content-center">
+                                <i class="fa-solid fa-users-line   "></i>
+                                <p class="h2 text-dark ">32</p>
+                            </div>
+                            <p class="w-50 float-end"><span class="fw">Hard Workers</span> rerum asperiores dolor</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- About section end -->
+                <!-- skill section start -->
+                <div class="container Skills py-5 ">
+                    <div class="row box">
+                        <h1 class=" py-2 mb-2 head">
+                            Skills
+                        </h1>
+                        <div class="fa-normal mb-4">Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+                            consectetur
+                            velit</div>
+                        <div class="col-md-6 mt-4 px-3">
+                            <label for="html" class="fw-sm">HTML</label>
+                            <label for="html" class="fw-sm float-end">100%</label>
+                            <div class="progress">
+                                <div class="progress-bar progres" role="progressbar"
+                                    style="width: 100%; height: 20px; border-radius: 0px !important;"
+                                    aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mt-4 px-3">
+                            <label for="html" class="fw-sm ">PHP</label>
+                            <label for="html" class="fw-sm float-end">80%</label>
+                            <div class="progress">
+
+                                <div class="progress-bar progres" role="progressbar"
+                                    style="width: 80%; height:20px;border-radius:0px!important;" aria-valuenow="80"
+                                    aria-valuemin="0" aria-valuemax="80"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mt-4 px-3">
+                            <label for="html" class="fw-sm">CSS</label>
+                            <label for="html" class="fw-sm float-end">90%</label>
+                            <div class="progress">
+
+                                <div class="progress-bar progres" role="progressbar"
+                                    style="width: 90%; border-radius: 0px !important;" aria-valuenow="90"
+                                    aria-valuemin="0" aria-valuemax="90"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mt-4 px-3">
+                            <label for="html" class="fw-sm">WORDPRESS/CMS</label>
+                            <label for="html" class="fw-sm float-end">90%</label>
+                            <div class="progress">
+
+                                <div class="progress-bar progres" role="progressbar"
+                                    style="width: 90%;border-radius: 0px !important;" aria-valuenow="90"
+                                    aria-valuemin="0" aria-valuemax="90"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mt-4 px-3">
+                            <label for="html" class="fw-sm">JAVASCRIPT</label>
+                            <label for="html" class="fw-sm float-end">75%</label>
+                            <div class="progress">
+
+                                <div class="progress-bar progres" role="progressbar"
+                                    style="width:75%; border-radius: 0px !important;" aria-valuenow="75"
+                                    aria-valuemin="0" aria-valuemax="75"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mt-4">
+                            <label for="html" class="fw-sm">PHOTOSHOP</label>
+                            <label for="html" class="fw-sm float-end">55%</label>
+                            <div class="progress">
+
+                                <div class="progress-bar progres" role="progressbar"
+                                    style="width: 55%;border-radius: 0px !important;" aria-valuenow="55"
+                                    aria-valuemin="0" aria-valuemax="90"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- !-- skill section stendart -->
+
+                <!-- Resume sectio start -->
+                <div class="container py-5" id="resume">
+                    <div class="row">
+                        <div class="col-md-12 box">
+                            <h1 class="py-2 mb-2" style="border-bottom: 5px solid rgb(20, 157, 221); width: 10%;">
+                                Resume
+                            </h1>
+                            <div class=" mb-4 fa-normal">Magnam dolores commodi suscipit. Necessitatibus eius
+                                consequatur ex
+                                aliquid fuga eum quidem. Sit sint consectetur velit.
+                                Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat
+                                sit in iste officiis commodi
+                                quidem hic quas.</div>
+                        </div>
+                        <div class="row ">
+                            <div>
+                                <h2 class="mb-5" style="width: 8%; border-bottom: 5px solid rgb(20, 157, 221);">
+                                    Sumary</h2>
+                            </div>
+                            <div class="col-md-6 box">
+                                <div class="sumary1 px-3">
+                                    <h3>
+                                        Brandon Johnson
+
+                                    </h3>
+                                    <i>Innovative and deadline-driven Graphic Designer with
+                                        3+
+                                        years of
+                                        experience designing
+                                        and developing user-centered
+                                        digital/print marketing material from initial concept to final, polished
+                                        deliverable</i>
+                                    <ul class="text-secondary">
+                                        <li>
+                                            Portland par 127,Orlando, FL
+                                        </li>
+                                        <li>
+                                            (123) 456-7891
+                                        </li>
+                                        <li>alice.barkley@example.com</li>
+                                    </ul>
+                                </div>
+                                <h2 class="ms-3">
+                                    Education
+
+                                </h2>
+                                <div class="sumary1 px-3">
+                                    <p class="fa-normal fw-sm text-sec">MASTER of Fine Arts & Graphic Design
+                                    </p>
+                                    <i class="fw-sm">2015 - 2016</i>
+                                    <br>
+                                    <i class="fw-sm text-sm">
+                                        Rochester Institute of Technology, Rochester, NY
+                                    </i>
+                                    <p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis
+                                        Eius vel ratione eius unde vitae rerum
+                                        voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader
+                                        mart dila</p>
+                                </div>
+                                <div class="sumary1 px-3">
+                                    <p class="fa-normal  fw-sm text-sec">Bachelor of Fine Arts & Graphic Design
+                                    </p>
+                                    <i class="fw-sm">2015 - 2016</i>
+                                    <br>
+                                    <i class="fw-sm text-sm">
+                                        Rochester Institute of Technology, Rochester, NY
+                                    </i>
+                                    <p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis
+                                        Eius vel ratione eius unde vitae rerum
+                                        voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader
+                                        mart dila</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 box ">
+                                <div class="sumary1 px-3">
+                                    <h3 class="">Senior graphic design specialist
+                                    </h3>
+                                    <p class="fs-6 fw-sm">2019 - Present
+                                    </p>
+                                    <i class=" fa-normal">
+                                        Experion, New York, NY
+                                    </i>
+                                    <ul>
+                                        <li>
+                                            Lead in the design, development, and implementation of the graphic, layout,
+                                            and
+                                            production communication materials
+                                        </li>
+                                        <li>
+                                            Delegate tasks to the 7 members of the design team and provide counsel on
+                                            all
+                                            aspects of the project.
+                                        </li>
+                                        <li>
+                                            Supervise the assessment of all graphic materials in order to ensure quality
+                                            and
+                                            accuracy of the design
+                                        </li>
+                                        <li>
+                                            Oversee the efficient use of production project budgets ranging from $2,000
+                                            -
+                                            $25,000
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="sumary1 px-3">
+                                    <h3 class=" ">
+                                        Graphic design specialist
+                                    </h3>
+                                    <p class="fs-6  fw-sm
+                                       text-sec">2017 - 2018</p>
+                                    <i>
+                                        Stepping Stone Advertising, New York, NY
+                                    </i>
+                                    <ul>
+                                        <li>
+                                            Developed numerous marketing programs (logos, brochures,infographics,
+                                            presentations,
+                                            and advertisements).
+                                        </li>
+                                        <li>
+                                            Managed up to 5 projects or tasks at a given time while under pressure
+                                        </li>
+                                        <li>
+                                            Recommended and consulted with clients on the most appropriate graphic
+                                            design
+                                        </li>
+                                        <li>
+                                            Created 4+ design presentations and proposals a month for clients and
+                                            account
+                                            manager
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Resume sectio end -->
+
+                <!-- portfolio section start -->
+                <div class="container portfolio mb-5 " id="portfolio">
+                    <h2 class="head mt-2">
+                        Portfolio
+                    </h2>
+                    <div class="row py-md-5 mt-4  ">
+
+                        <div class="col-md-4 box">
+                            <div class="card mb-5">
+                                <img src="/asset//app-1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body  ">
+                                    <button class="px-2 py-1 card-btn bg-pri text-white border-0">App1</button>
+                                    <div class="card-link ">
+                                        <a href="#" class=""><i class="fa-solid fa-link text-white"></i></a>
+                                        <a href="#" class=""><i
+                                                class="fa-solid fa-magnifying-glass-plus text-white"></i></a>
+                                    </div>
+                                    <h5 class="card-title ">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </h5>
+
+                                </div>
+                                <div class="overlay"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 box">
+                            <div class="card mb-5">
+                                <img src="/asset//product-1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body  ">
+                                    <button class="px-2 py-1 card-btn bg-pri text-white   border-0">App1</button>
+
+                                    <div class="card-link ">
+                                        <a href="#" class=""><i class="fa-solid fa-link text-white"></i></a>
+                                        <a href="#" class=""><i
+                                                class="fa-solid fa-magnifying-glass-plus text-white"></i></a>
+                                    </div>
+                                    <h5 class="card-title ">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </h5>
+
+                                </div>
+                                <div class="overlay"></div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-4 box">
+
+
+
+                            <div class="card mb-5">
+                                <img src="/asset/prod2.jpg" class="card-img-top" alt="...">
+                                <div class="card-body  ">
+                                    <button class="px-2 py-1 card-btn bg-pri text-white   border-0">App1</button>
+
+                                    <div class="card-link ">
+                                        <a href="#" class=""><i class="fa-solid fa-link text-white"></i></a>
+                                        <a href="#" class=""><i
+                                                class="fa-solid fa-magnifying-glass-plus text-white"></i></a>
+                                    </div>
+                                    <h5 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </h5>
+                                </div>
+                                <div class="overlay"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 box">
+                            <div class="card mb-5">
+                                <img src="/asset/pro3.jpg" class="card-img-top" alt="...">
+                                <div class="card-body  ">
+                                    <button class="px-2 py-1 card-btn bg-pri text-white border-0">App1</button>
+
+                                    <div class="card-link ">
+                                        <a href="#" class=""><i class="fa-solid fa-link text-white"></i></a>
+                                        <a href="#" class=""><i
+                                                class="fa-solid fa-magnifying-glass-plus text-white"></i></a>
+                                    </div>
+                                    <h5 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </h5>
+
+                                </div>
+                                <div class="overlay"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 box">
+                            <div class="card mb-5">
+                                <img src="/asset/pro4.jpg" class="card-img-top" alt="...">
+                                <div class="card-body  ">
+                                    <button class="px-2 py-1 card-btn bg-pri text-white border-0">App1</button>
+
+                                    <div class="card-link ">
+                                        <a href="#" class=""><i class="fa-solid fa-link text-white"></i></a>
+                                        <a href="#" class=""><i
+                                                class="fa-solid fa-magnifying-glass-plus text-white"></i></a>
+                                    </div>
+                                    <h5 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </h5>
+                                </div>
+                                <div class="overlay"></div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-4 box">
+
+
+
+                            <div class="card mb-5">
+                                <img src="/asset/pro5.jpg" class="card-img-top" alt="...">
+                                <div class="card-body  ">
+                                    <button class="px-2 py-1 card-btn bg-pri text-white border-0">App1</button>
+
+                                    <div class="card-link">
+                                        <a href="#" class=""><i class="fa-solid fa-link text-white"></i></a>
+                                        <a href="#" class=""><i
+                                                class="fa-solid fa-magnifying-glass-plus text-white"></i></a>
+                                    </div>
+                                    <h5 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </h5>
+
+                                </div>
+                                <div class="overlay"></div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-4 box">
+
+
+
+                            <div class="card mb-5">
+                                <img src="/asset//app-1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body  ">
+                                    <button class="px-2 py-1 card-btn bg-pri text-white border-0">App1</button>
+
+                                    <div class="card-link ">
+                                        <a href="#" class=""><i class="fa-solid fa-link text-white"></i></a>
+                                        <a href="#" class=""><i
+                                                class="fa-solid fa-magnifying-glass-plus text-white"></i></a>
+                                    </div>
+                                    <h5 class="card-title  ">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </h5>
+                                </div>
+                                <div class="overlay"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 box">
+                            <div class="card mb-5">
+                                <img src="/asset/prod2.jpg" class="card-img-top" alt="...">
+                                <div class="card-body  ">
+                                    <button class="px-2 py-1 card-btn bg-pri text-white border-0">App1</button>
+                                    <div class="card-link ">
+                                        <a href="#" class=""><i class="fa-solid fa-link text-white"></i></a>
+                                        <a href="#" class=""><i
+                                                class="fa-solid fa-magnifying-glass-plus text-white"></i></a>
+                                    </div>
+                                    <h5 class="card-title  ">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </h5>
+                                </div>
+                                <div class="overlay"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 box">
+                            <div class="card mb-5">
+                                <img src="/asset/pro3.jpg" class="card-img-top" alt="...">
+                                <div class="card-body  ">
+                                    <button class="px-2 py-1 card-btn bg-pri text-white border-0">App1</button>
+                                    <div class="card-link ">
+                                        <a href="#" class=""><i class="fa-solid fa-link text-white"></i></a>
+                                        <a href="#" class=""><i
+                                                class="fa-solid fa-magnifying-glass-plus text-white"></i></a>
+                                    </div>
+                                    <h5 class="card-title  ">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </h5>
+                                </div>
+                                <div class="overlay"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- portfolio sectionn ends -->
+
+
+
+                <!-- Services section start now -->
+                <div class="container service py-5" id="services">
+                    <h2 class="head">
+                        Services
+                    </h2>
+                    <div class="row px-md-2 mt-4 servic-card  py-3 box  ">
+                        <div class="col-md-4 py-4 d-flex firstcard ">
+                            <i class="fa-solid fa-suitcase cardicon"></i>
+                            <a class="mt-1 ms-3 text-dark text-decoration-none" href="#">
+                                <h4>
+                                    Lorem Ipsum
+                                </h4>
+                                <p>
+                                    Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
+                                    occaecati cupiditate non provident
+                                </p>
+                            </a>
+                        </div>
+                        <div class="col-md-4 py-4 d-flex firstcard ">
+                            <i class="fa-solid fa-atom cardicon"></i>
+                            <a class="mt-1 ms-3 text-dark text-decoration-none" href="#">
+                                <h4>
+                                    Lorem Ipsum
+                                </h4>
+                                <p>
+                                    Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
+                                    occaecati cupiditate non provident
+                                </p>
+                            </a>
+                        </div>
+                        <div class="col-md-4 py-4 d-flex firstcard  ">
+                            <i class="fa-solid fa-chart-simple cardicon"></i>
+                            <a class="mt-1 ms-3 text-dark text-decoration-none" href="#">
+                                <h4>
+                                    Lorem Ipsum
+                                </h4>
+                                <p>
+                                    Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
+                                    occaecati cupiditate non provident
+                                </p>
+                            </a>
+                        </div>
+                        <div class="col-md-4 py-4 d-flex firstcard ">
+                            <i class="fa-regular fa-sun cardicon"></i>
+                            <a class="mt-1 ms-3 text-dark text-decoration-none" href="#">
+                                <h4>
+                                    Lorem Ipsum
+                                </h4>
+                                <p>
+                                    Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
+                                    occaecati cupiditate non provident
+                                </p>
+                            </a>
+                        </div>
+                        <div class="col-md-4 py-4 d-flex firstcard ">
+                            <i class="fa-solid fa-clipboard-list cardicon px-3"></i>
+                            <a class="mt-1 ms-3 text-dark text-decoration-none" href="#">
+                                <h4>
+                                    Lorem Ipsum
+                                </h4>
+                                <p>
+                                    Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
+                                    occaecati cupiditate non provident
+                                </p>
+                            </a>
+                        </div>
+                        <div class="col-md-4 py-4 d-flex firstcard ">
+                            <i class="fa-solid fa-binoculars cardicon"></i>
+                            <a class="mt-1 ms-3 text-dark text-decoration-none" href="#">
+                                <h4>
+                                    Lorem Ipsum
+                                </h4>
+                                <p>
+                                    Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
+                                    occaecati cupiditate non provident
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- services section ensd here -->
+                <!-- testimonoals start hhere -->
+                <div class="container testimonial py-5 box">
+                    <div class="row mt-4 test-col slider ">
+                        <div class="col-md-4 mx-5 ">
+                            <div class=" test">
+                                <div class="test-body">
+                                    <p><i class="fa-solid fa-quote-left  "></i>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores,
+                                        necessitatibus nemo! A non perspiciatis veritatis quas voluptatibus ratione
+                                        accusamus dolor.<i class="fa-solid fa-quote-right  mt-1 "></i>
+                                    </p>
+                                    <div class="comet">
+                                    </div>
+                                </div>
+                                <div class="text-center">
+                                    <img src="/asset/testimonials-1.jpg" class=" test-img w-25 text-center" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mx-5">
+                            <div class=" test">
+                                <div class="test-body">
+                                    <p><i class="fa-solid fa-quote-left"></i>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores,
+                                        necessitatibus nemo! A non perspiciatis veritatis quas voluptatibus ratione
+                                        accusamus dolor.<i class="fa-solid fa-quote-right mt-1 "></i>
+                                    </p>
+                                    <div class="comet">
+                                    </div>
+                                </div>
+                                <div class="text-center">
+                                    <img src="/asset/testimonials-4.jpg" class="test-img w-25 text-center" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mx-5 ">
+                            <div class="test">
+                                <div class="test-body">
+                                    <p><i class="fa-solid fa-quote-left"></i>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores,
+                                        necessitatibus nemo! A non perspiciatis veritatis quas voluptatibus ratione
+                                        accusamus dolor.<i class="fa-solid fa-quote-right mt-1 "></i>
+                                    </p>
+                                    <div class="comet">
+                                    </div>
+                                </div>
+                                <div class="text-center">
+                                    <img src="/asset/testimonials-1.jpg" class="test-img w-25 text-center" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mx-5 ">
+                            <div class="test">
+                                <div class="test-body">
+                                    <p><i class="fa-solid fa-quote-left  "></i>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores,
+                                        necessitatibus nemo! A non perspiciatis veritatis quas voluptatibus ratione
+                                        accusamus dolor.<i class="fa-solid fa-quote-right mt-1 "></i>
+                                    </p>
+                                    <div class="comet">
+                                    </div>
+                                </div>
+                                <div class="text-center">
+                                    <img src="/asset/my-profile-img.jpg" class="test-img w-25 text-center" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- testimonials ends here -->
+                <div class="container contact px-3 px-md-5 py-5 box" id="contact">
+                    <h3 class="head">
+                        Contact
+                    </h3>
+                    <div class="row mt-4">
+                        <div class="col-md-5 px-5 py-4">
+                            <div class="address d-flex">
+                                <i class="fa-solid fa-location-dot cardicon "></i> <a
+                                    class="mt-1 ms-2 text-dark text-decoration-none"
+                                    href="https://maps.app.goo.gl/vyuNGxBaS8sbKXfe9">
+                                    <h5> Address
+                                    </h5>
+                                    <p class="fa-small">
+                                        A108 Adam Street, New York, NY 535022
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="call d-flex">
+                                <i class="fa-solid fa-phone-flip cardicon px-2"></i> <a
+                                    class="mt-1 ms-2 text-dark text-decoration-none" href="tel:03004528499">
+                                    <h5> Call Us
+                                    </h5>
+                                    <p class="fa-small">
+                                        +1 5589 55488 55
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="call d-flex email">
+                                <i class="fa-regular fa-envelope cardicon px-2"></i> <a
+                                    class="mt-1 ms-2 text-dark text-decoration-none"
+                                    href="mailto:sddamawan32@gmail.com">
+                                    <h5> Email Us
+                                    </h5>
+                                    <p class="fa-small">
+                                        info@example.com </p>
+                                </a>
+                            </div>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6013.153928206569!2d73.13713021743808!3d31.43792601754223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39226816511e1321%3A0x97fba59f903899c0!2sH3%20Solutions!5e0!3m2!1sen!2s!4v1728698360015!5m2!1sen!2s"
+                                width="100%" height="270" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <div class="col-md-6 offset-md-1 py-3 mt-md-0 mt-5 form ">
+                            <div class="d-flex justify-content-between mt-4 ">
+                                <div>
+                                    <label for="name">Full Name</label>
+                                    <input type="text" id="name" class="rounded-0">
+                                </div>
+                                <div>
+                                    <label for="email">Your Email</label>
+                                    <input type="text" id="email" class="rounded-0">
+                                </div>
+                            </div>
+                            <div class="mt-4  ">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" class="rounded-0">
+                            </div>
+                            <div class="mt-4  ">
+                                <label for="message">Message</label>
+                                <textarea name="message" id="message" class="rounded-0 "
+                                    style="height: 400 !important;"></textarea>
+                            </div>
+                            <div class="text-center mt-5">
+                                <button class="bg-pri border-0 rounded-pill text-white fa-normal fw-sm py-2 px-3">Send
+                                    Message</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer">
+                    <p>© Copyright <span class="fw-sm">iPortfolio</span> All Rights Reserved</p>
+                    <p>Designed by <a href="">H3 Solutions</a></p>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- GSAP cdn link -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+        <!-- boootstrap js link -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
+        <!-- slik slider cdn link -->
+        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+        <script type="text/javascript" src="asset/silk/slick/slick.min.js"></script>
+        <script src="index.js">
+
+        </script>
+        <script>
+
+            $('.slider').slick({
+                infinite: true,
+                speed: 2000,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                arrows: false,
+                cssEase: 'linear',
+                pauseOnHover: false,
+
+
+                autoplay: true,
+                autoplaySpeed: 0,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2,
+                            infinite: true,
+                            dots: true
+                        }
+                    },
+
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+
+                ]
+
+            });
+        </script>
+
+
+</body>
+
+</html>

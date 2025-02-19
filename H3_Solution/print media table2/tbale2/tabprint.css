@@ -1,0 +1,29 @@
+#tab-row td {
+  font-size: 8px;
+}
+
+#tab-row th {
+  font-size: 9px;
+}
+#name {
+  width: 80px !important;
+  padding: 0px;
+  font-size: 14px;
+}
+#desig {
+  width: 100px !important;
+  padding: 0px;
+  font-size: 14px;
+}
+/* #headprint {
+    position: fixed !important ;
+    top: 0px;
+  } */
+.print-footer {
+  display: block !important;
+  position: fixed;
+  bottom: 0;
+}
+.screen-footer {
+  display: none;
+}

@@ -1,0 +1,213 @@
+body {
+  font-family: "Lato", sans-serif;
+}
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-width: 450px) {
+ 
+  .sidebar {
+    padding-top: 15px;
+  }
+  .sidebar a {
+    font-size: 18px;
+  }
+  .img-head{
+    height: 300px !important;
+  }
+}
+.img-head {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+@media screen and (min-width: 450px) {
+
+  .navmenue{
+  margin-left: 600px !important;
+
+}
+  .button5 {
+  background-color: rgb(1, 165, 64) !important;
+  border-radius: 20px !important;
+  padding-left: 200px !important;
+  padding-right: 200px !important;
+  margin-left: 200px !important;
+  
+}
+  .img-head {
+    height: 500px !important;
+    width: 100% !important;
+  }
+  .healthy {
+    font-size: 90px !important;
+  }
+  .text-head {
+    font-size: 93px !important;
+    font-family: "Times New Roman", Times, serif;
+  }
+  .carasol {
+    font-size: 80px !important;
+  }
+  .ice {
+    font-size: 100px !important;
+  }
+  .veg3 {
+    width: 600px !important;
+    height: 400px !important;
+    position: absolute;
+  }
+  .off {
+    position: relative;
+    top: 50px !important;
+    left: 250px;
+    height: 400px !important     ;
+    width: 400px !important;
+  }
+  .straw {
+    height: 600px !important;
+  }
+  .icepic{
+    width: 100%;
+  }
+}
+.button1 {
+  background-color: rgb(18, 199, 87) !important;
+  border-radius: 20px !important;
+}
+.button2 {
+  background-color: white !important;
+  border-radius: 20px !important;
+  color: #4b4949 !important;
+}
+.button1:hover {
+  background-color: rgb(6, 160, 65) !important;
+}
+.button2:hover {
+  background-color: rgb(13, 160, 218) !important;
+  color: white !important;
+}
+.healthy {
+  font-family: "Times New Roman", Times, serif;
+}
+.left {
+  background-color: rgb(240, 182, 8) !important;
+}
+.carasole {
+  font-family: "Times New Roman", Times, serif, Helvetica, sans-serif;
+}
+.ice {
+  font-family: "Times New Roman", Times, serif, Helvetica, sans-serif;
+  background-color: rgb(254, 192, 12) !important;
+}
+.ice-left {
+  background-color: rgb(254, 192, 12) !important;
+}
+.button3 {
+  background-color: rgb(18, 199, 87) !important ;
+  border-radius: 20px !important;
+}
+.button3:hover {
+  background-color: rgb(1, 165, 64) !important;
+}
+
+/* form--------------------------------------? */
+
+#name:focus + label {
+  color: rgb(237, 183, 125) !important;
+}
+#lable {
+  color: grey !important;
+}
+body {
+  background-color: rgb(255, 217, 176) !important;
+}
+
+ul li {
+  background-color: white !important;
+  color: black !important;
+  border-radius: 20px !important;
+  font-weight: 700;
+}
+ul li:hover {
+  background-color: rgb(237, 183, 125) !important ;
+}
+ul li:active {
+  background-color: black !important;
+  color: white !important;
+}
+.button {
+  background-color: rgb(236, 164, 86) !important;
+}
+.link {
+  color: rgb(237, 183, 125) !important;
+}
+.link:hover {
+  text-decoration: underline !important;
+}
+@media screen and (min-width: 480px) {
+  .formimg {
+    height: 660px !important;
+  }
+  .sub {
+    font-size: 80px !important;
+  }
+}
+
+input:focus {
+  box-shadow: none !important;
+}
+
+.button:hover {
+  background-color: #df790c !important ;
+}
+.button:active {
+  background-color: black !important;
+}
+
+/* ------------------------------------ */
+
+.subcol {
+  background-color: rgb(254, 192, 12) !important;
+}
+.email {
+  border-radius: 20px !important;
+}
+
+.htext {
+  text-shadow: 2px 2px  rgb(254, 192, 12) !important ;
+ 
+}
+.search {
+  border: 5px groove white;
+}
+.healthy, .ice , .sub, .itext{
+  text-shadow: 2px 2px 3px grey !important;
+}
+.button5{
+    background-color: rgb(1, 165, 64) !important;
+  border-radius: 20px !important;
+  /* margin-left: 10px !important;
+  padding-left: 130px !important;
+  padding-right: 130px !important; */
+}
+/* \menu bar----------------------------- */
+
+.button5:hover{
+  background-color: green !important;
+}
+
+.navop{
+  border-radius: 2px !important;
+}
+.navop:hover{
+  background-color: #00ffea !important;
+ 
+}
+.dpi:hover{
+  background-color: #00ffea !important;
+  color: #0a0106 !important;
+
+}
+
